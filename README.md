@@ -1,8 +1,10 @@
-# **Project Title**
+# **Ranger Builder**
 
-### Date: MM/DD/YYYY
+### Date: 11/25/2020
 
-#### By: Developer Name
+#### By: Michael Lackey
+
+#### [Website](https://michaellackey.com/) | [GitHub](https://github.com/mlackey9601) | [LinkedIn](https://www.linkedin.com/in/michaelglackey/) | [Vettery](https://www.vettery.com/ga/employers)
 ***
 
 ### ***Description***
@@ -12,15 +14,16 @@
 
 ### ***Technologies Used***
 
-* ##### JavaScript
-* ##### HTML
-* ##### CSS
-* ##### etc...
+* ##### HTML5/CSS3/JavaScript
+* ##### ReactJS
+* ##### Node.js/Express
+* ##### MongoDB/Mongoose
 ***
 
 ### ***Getting Started***
 
 ##### In this section, include the link to your project and any instructions you deem important to get started.
+##### A Trello board for this project can be viewed [here](https://trello.com/b/CGbL3uoS).
 ##### The project can be viewed [here](url).
 ***
 
@@ -30,18 +33,6 @@
 ![Alt Text](url)
 ###### Quick Image Description
 ![Alt Text](url)
-***
-
-### ***User Experience***
-
-#### User Story #1
-##### A brief description of someone and why they would engage with this project.
-#### User Story #2
-##### A brief description of someone and why they would engage with this project.
-#### Minimum Viable Product
-* ##### As a user, ...
-* ##### As a user, ...
-* ##### As a user, ...
 ***
 
 ### ***Future Updates***
@@ -54,7 +45,7 @@
 
 ### ***Credits***
 
-##### Credit: [Description](url)
+##### App Scaffolding: [Chajr 1.2.2](https://github.com/davidstinson/chajr)
   
 ##### Credit: [Description](url)
   
