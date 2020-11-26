@@ -1,0 +1,26 @@
+.ProfilePage {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vmin;
+    width: 100vmax;
+    background-image: url("https://i.imgur.com/dUvbVJZ.jpg");
+    background-size: cover;
+    color: lightgray;
+}
+  
+.heading {
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: bold;
+}
+
+.info {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 20px;
+    width: 100vmax;
+}
