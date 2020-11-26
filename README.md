@@ -14,10 +14,7 @@
 
 ### ***Technologies Used***
 
-* ##### HTML5/CSS3/JavaScript
-* ##### ReactJS
-* ##### Node.js/Express
-* ##### MongoDB/Mongoose
+![Technologies Used](public/tech-banner.png)
 ***
 
 ### ***Getting Started***
