@@ -30,8 +30,8 @@ export function logout() {
   tokenService.removeToken();
 }
 
-export function login(creds) {
-  return fetch(BASE_URL + 'login', {
+export function signin(creds) {
+  return fetch(BASE_URL + 'signin', {
     method: 'POST',
     headers: new Headers({'Content-Type': 'application/json'}),
     body: JSON.stringify(creds)

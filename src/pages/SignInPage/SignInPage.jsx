@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import './LoginPage.css';
+import './SignInPage.css';
 import * as userAPI from '../../services/user-api';
 
-class LoginPage extends Component {
+class SignInPage extends Component {
   
   state = {
     email: '',
@@ -19,8 +19,8 @@ class LoginPage extends Component {
   handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await userAPI.login(this.state);
-      this.props.handleSignupOrLogin();
+      await userAPI.signin(this.state);
+      this.props.handleSignupOrSignIn();
       this.props.history.push('/');
     } catch (err) {
       alert('Invalid Credentials!');
@@ -29,7 +29,7 @@ class LoginPage extends Component {
 
   render() {
     return (
-      <div className="LoginPage">
+      <div className="SignInPage">
         <header className="heading">Sign In</header>
         &nbsp;&nbsp;&nbsp;
         <form onSubmit={this.handleSubmit} >
@@ -68,4 +68,4 @@ class LoginPage extends Component {
   }
 }
 
-export default LoginPage;
+export default SignInPage;

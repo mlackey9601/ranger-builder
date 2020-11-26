@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { Route, Switch, Redirect } from 'react-router-dom';
 import SignupPage from '../SignupPage/SignupPage';
-import LoginPage from '../LoginPage/LoginPage';
+import SignInPage from '../SignInPage/SignInPage';
 import ProfilePage from '../ProfilePage/ProfilePage'
 import * as rangerAPI from '../../services/ranger-api';
 import * as userAPI from '../../services/user-api';
@@ -23,7 +23,7 @@ class App extends Component {
     this.setState({ user: null });
   }
 
-  handleSignupOrLogin = () => {
+  handleSignupOrSignIn = () => {
     this.setState({user: userAPI.getUser()});
   }
 
@@ -44,16 +44,16 @@ class App extends Component {
           handleLogout={this.handleLogout}
         />
         <Switch>
-          <Route exact path='/login' render={({ history }) => 
-            <LoginPage
+          <Route exact path='/signin' render={({ history }) => 
+            <SignInPage
               history={history}
-              handleSignupOrLogin={this.handleSignupOrLogin}
+              handleSignupOrSignIn={this.handleSignupOrSignIn}
             />
           }/>
           <Route exact path='/signup' render={({ history }) => 
             <SignupPage
               history={history}
-              handleSignupOrLogin={this.handleSignupOrLogin}
+              handleSignupOrSignIn={this.handleSignupOrSignIn}
             />
           }/>
           <Route exact path='/profile' render={() => 
@@ -62,7 +62,7 @@ class App extends Component {
                 user={this.state.user}
               />
             :
-              <Redirect to='/login'/>
+              <Redirect to='/signin'/>
           }/>
           <Route exact path='/' render={() =>
             <Ranger />

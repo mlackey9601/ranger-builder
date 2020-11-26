@@ -4,7 +4,7 @@ const usersCtrl = require('../../controllers/users');
 
 /*---------- Public Routes ----------*/
 router.post('/signup', usersCtrl.signup);
-router.post('/login', usersCtrl.login);
+router.post('/signin', usersCtrl.signin);
 
 /*---------- Protected Routes ----------*/
 router.use(require('../../config/auth'));
