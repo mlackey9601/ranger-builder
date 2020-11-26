@@ -1,4 +1,4 @@
-# **Ranger Builder**
+![Ranger Builder](public/banner.png)
 
 ### Date: 11/25/2020
 
@@ -9,7 +9,7 @@
 
 ### ***Description***
 
-##### A brief description of the project.
+##### A warband builder for the tabletop game Rangers of the Shadow Deep.
 ***
 
 ### ***Technologies Used***
@@ -23,14 +23,14 @@
 ### ***Getting Started***
 
 ##### In this section, include the link to your project and any instructions you deem important to get started.
-##### A Trello board for this project can be viewed [here](https://trello.com/b/CGbL3uoS).
+##### A Trello board for this project can be viewed [here](https://trello.com/b/XfxdvytM).
 ##### The project can be viewed [here](url).
 ***
 
 ### ***Screenshots***
 
-###### Quick Image Description
-![Alt Text](url)
+###### Welcome Page Concept
+![Welcome Page](public/concept1.png)
 ###### Quick Image Description
 ![Alt Text](url)
 ***
@@ -47,7 +47,7 @@
 
 ##### App Scaffolding: [Chajr 1.2.2](https://github.com/davidstinson/chajr)
   
-##### Credit: [Description](url)
+##### Joseph McCullough: [Rangers of the Shadow Deep]([https://www.drivethrurpg.com/browse/pub/11264])
   
 ##### Credit: [Description](url)
 ***

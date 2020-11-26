@@ -43,7 +43,6 @@ class App extends Component {
           user={this.state.user}
           handleLogout={this.handleLogout}
         />
-        <h1>Ranger Builder</h1>
         <Switch>
           <Route exact path='/login' render={({ history }) => 
             <LoginPage
@@ -59,7 +58,9 @@ class App extends Component {
           }/>
           <Route exact path='/profile' render={() => 
             userAPI.getUser() ? 
-              <ProfilePage />
+              <ProfilePage 
+                user={this.state.user}
+              />
             :
               <Redirect to='/login'/>
           }/>
