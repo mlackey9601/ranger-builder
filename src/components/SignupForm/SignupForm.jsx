@@ -5,7 +5,9 @@ import * as userAPI from '../../services/user-api';
 class SignupForm extends Component {
 
   state = {
-    name: '',
+    firstName: '',
+    lastName: '',
+    nickName: '',
     email: '',
     password: '',
     passwordConf: ''
@@ -30,7 +32,7 @@ class SignupForm extends Component {
   }
 
   isFormInvalid() {
-    return !(this.state.name && this.state.email && this.state.password === this.state.passwordConf);
+    return !(this.state.firstName && this.state.lastName && this.state.email && this.state.password === this.state.passwordConf);
   }
 
   render() {
@@ -44,9 +46,29 @@ class SignupForm extends Component {
           <div>
             <input 
               type="text"
-              placeholder="Name" 
-              value={this.state.name} 
-              name="name" 
+              placeholder="First Name" 
+              value={this.state.firstName} 
+              name="firstName" 
+              onChange={this.handleChange} 
+            />
+          </div>
+          &nbsp;&nbsp;&nbsp;
+          <div>
+            <input 
+              type="text"
+              placeholder="Last Name" 
+              value={this.state.lastName} 
+              name="lastName" 
+              onChange={this.handleChange} 
+            />
+          </div>
+          &nbsp;&nbsp;&nbsp;
+          <div>
+            <input 
+              type="text"
+              placeholder="Nickname (Optional)" 
+              value={this.state.nickName} 
+              name="nickName" 
               onChange={this.handleChange} 
             />
           </div>

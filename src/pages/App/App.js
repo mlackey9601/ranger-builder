@@ -3,7 +3,7 @@ import './App.css';
 import { Route, Switch, Redirect } from 'react-router-dom';
 import SignupPage from '../SignupPage/SignupPage';
 import LoginPage from '../LoginPage/LoginPage';
-import RangersSecretPage from '../RangersSecretPage/RangersSecretPage'
+import ProfilePage from '../ProfilePage/ProfilePage'
 import * as rangerAPI from '../../services/ranger-api';
 import * as userAPI from '../../services/user-api';
 import Ranger from '../../components/Ranger/Ranger'
@@ -57,9 +57,9 @@ class App extends Component {
               handleSignupOrLogin={this.handleSignupOrLogin}
             />
           }/>
-          <Route exact path='/ranger-secret' render={() => 
+          <Route exact path='/profile' render={() => 
             userAPI.getUser() ? 
-              <RangersSecretPage />
+              <ProfilePage />
             :
               <Redirect to='/login'/>
           }/>

@@ -5,16 +5,16 @@ import './NavBar.css';
 const NavBar = (props) => {
   let nav = props.user ?
     <div>
-      <Link to='/ranger-secret' className='NavBar-link'>Click here to check authentication!</Link>
-      &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+      <span className='NavBar-welcome'>Welcome, {(props.user.nickName) ? (props.user.nickName) : (props.user.firstName)}</span>
+      &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+      <Link to='/profile' className='NavBar-link'>Profile</Link>
+      &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
       <Link to='' className='NavBar-link' onClick={props.handleLogout}>Logout</Link>
-      &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-      <span className='NavBar-welcome'>Welcome, {props.user.name}</span>
     </div>
     :
     <div>
       <Link to='/login' className='NavBar-link'>Sign In</Link>
-      &nbsp;&nbsp;|&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
       <Link to='/signup' className='NavBar-link'>Sign Up</Link>
     </div>;
 
