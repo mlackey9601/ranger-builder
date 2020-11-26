@@ -5,3 +5,13 @@
   align-items: center;
   margin-bottom: 50px;
 }
+
+.heading {
+  font-family: 'Cinzel Decorative', cursive;
+  font-weight: bold;
+}
+
+input {
+  height: 30px;
+  width: 200px;
+}

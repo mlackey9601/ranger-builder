@@ -9,14 +9,17 @@ export function signup(user) {
     body: JSON.stringify(user)
   })
   .then(res => {
-    if (res.ok) return res.json();
-    // Probably a duplicate email
-    throw new Error('Email already taken!');
+    console.log(res, '<-- response object')
+    return res.json();
   })
-  // Parameter destructuring!
-  .then(({token}) => tokenService.setToken(token));
-  // The above could have been written as
-  //.then((token) => token.token);
+  .then(json => {
+    if(json.token) return json;
+    console.log(json, '<-- the error')
+    throw new Error(`${json.err}`)
+  })
+  .then(({ token }) => {
+    tokenService.setToken(token);
+  })
 }
 
 export function getUser() {
@@ -34,7 +37,6 @@ export function login(creds) {
     body: JSON.stringify(creds)
   })
   .then(res => {
-    // Valid login if we have a status of 2xx (res.ok)
     if (res.ok) return res.json();
     throw new Error('Bad Credentials!');
   })

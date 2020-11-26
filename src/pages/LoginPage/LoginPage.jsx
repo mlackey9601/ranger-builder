@@ -12,7 +12,6 @@ class LoginPage extends Component {
 
   handleChange = (e) => {
     this.setState({
-      // Using ES2015 Computed Property Names
       [e.target.name]: e.target.value
     });
   }
@@ -21,12 +20,9 @@ class LoginPage extends Component {
     e.preventDefault();
     try {
       await userAPI.login(this.state);
-      // Let <App> know a user has signed up!
       this.props.handleSignupOrLogin();
-      // Successfully signed up - show GamePage
       this.props.history.push('/');
     } catch (err) {
-      // Use a modal or toast in your apps instead of alert
       alert('Invalid Credentials!');
     }
   }
@@ -34,10 +30,12 @@ class LoginPage extends Component {
   render() {
     return (
       <div className="LoginPage">
-        <header>Log In</header>
+        <header className="heading">Sign In</header>
+        &nbsp;&nbsp;&nbsp;
         <form onSubmit={this.handleSubmit} >
           <div>
             <input 
+              autoComplete="off"
               type="email" 
               placeholder="Email"
               value={this.state.email} 
@@ -45,8 +43,10 @@ class LoginPage extends Component {
               onChange={this.handleChange} 
             />
           </div>
+          &nbsp;&nbsp;&nbsp;
           <div>
-            <input 
+            <input
+              autoComplete="off" 
               type="password"
               placeholder="Password" 
               value={this.state.pw} 
@@ -54,11 +54,14 @@ class LoginPage extends Component {
               onChange={this.handleChange} 
             />
           </div>
-          <div>
-            <button>Log In</button>
-            &nbsp;&nbsp;&nbsp;
-            <Link to='/'>Cancel</Link>
-          </div>
+          &nbsp;&nbsp;&nbsp;
+          <center>
+            <div>
+              <button>Sign In</button>
+              &nbsp;&nbsp;&nbsp;
+              <Link to='/'>Cancel</Link>
+            </div>
+          </center>
         </form>
       </div>
     );
