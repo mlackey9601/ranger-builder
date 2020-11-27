@@ -19,25 +19,23 @@
 
 ### ***Getting Started***
 
-##### In this section, include the link to your project and any instructions you deem important to get started.
-##### A Trello board for this project can be viewed [here](https://trello.com/b/XfxdvytM).
-##### The project can be viewed [here](url).
+##### Sign up and sign in as a new user and then walk through the Ranger creation page to begin your warband.
+##### A Trello board was used to keep track of development progress and can be viewed [here](https://trello.com/b/XfxdvytM).
+##### The project itself was deployed using Heroku and can be viewed [here](url).
 ***
 
 ### ***Screenshots***
 
 ###### Welcome Page Concept
 ![Welcome Page](public/concept1.png)
-###### Quick Image Description
-![Alt Text](url)
 ***
 
 ### ***Future Updates***
 
-- [ ] Put items you want to add to your project later in this list
-- [ ] Leave the brackets empty for incomplete items
-- [x] Put an 'x' in the brackets if you want the item to appear completed
-- [x] ~~Put tildes on each side of the item if you want it to be struck out~~
+- [ ] Add a Bestiary section where stats on different enemies can be looked up
+- [ ] Add an item lookup section so magic items / herbs / potions can be referenced and added to inventory
+- [ ] New users can choose an avatar for their account
+- [ ] Users can create multiple warbands
 ***
 
 ### ***Credits***
