@@ -1,4 +1,4 @@
-.ProfilePage {
+.HomePage {
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
@@ -9,8 +9,8 @@
     color: rgba(37, 35, 31, 1);
     margin: 30px;
 }
-  
-.profile-heading {
+
+.home-heading {
     font-weight: bold;
-    font-size: 3vmin;
+    font-size: 5vmin;
 }

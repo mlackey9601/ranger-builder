@@ -2,7 +2,7 @@ import tokenService from './tokenService';
 
 const BASE_URL = '/api/users/';
 
-export function signup(user) {
+export function signUp(user) {
   return fetch(BASE_URL + 'signup', {
     method: 'POST',
     headers: new Headers({'Content-Type': 'application/json'}),
@@ -26,11 +26,11 @@ export function getUser() {
   return tokenService.getUserFromToken();
 }
 
-export function logout() {
+export function signOut() {
   tokenService.removeToken();
 }
 
-export function signin(creds) {
+export function signIn(creds) {
   return fetch(BASE_URL + 'signin', {
     method: 'POST',
     headers: new Headers({'Content-Type': 'application/json'}),

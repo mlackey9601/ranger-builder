@@ -19,7 +19,7 @@ class SignInPage extends Component {
   handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await userAPI.signin(this.state);
+      await userAPI.signIn(this.state);
       this.props.handleSignupOrSignIn();
       this.props.history.push('/');
     } catch (err) {

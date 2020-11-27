@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import * as userAPI from '../../services/user-api';
 
-class SignupForm extends Component {
+class SignUpForm extends Component {
 
   state = {
     firstName: '',
@@ -23,7 +23,7 @@ class SignupForm extends Component {
   handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await userAPI.signup(this.state);
+      await userAPI.signUp(this.state);
       this.props.handleSignupOrSignIn();
       this.props.history.push('/');
     } catch (err) {
@@ -39,7 +39,7 @@ class SignupForm extends Component {
     return (
       <div>
         <center>
-          <header className="heading">Sign Up</header>
+          <header className="signup-heading">Sign Up</header>
         </center>
         &nbsp;&nbsp;&nbsp;
         <form onSubmit={this.handleSubmit} >
@@ -120,4 +120,4 @@ class SignupForm extends Component {
   }
 }
 
-export default SignupForm;
+export default SignUpForm;

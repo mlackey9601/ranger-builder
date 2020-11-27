@@ -1,12 +1,12 @@
-.SignupPage {
+.SignUpPage {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  margin: 50px;
+  margin: 30px;
 }
 
-.heading {
+.signup-heading {
   font-family: 'Cinzel Decorative', cursive;
   font-weight: bold;
 }

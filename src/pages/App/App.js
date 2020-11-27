@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
 import { Route, Switch, Redirect } from 'react-router-dom';
-import SignupPage from '../SignupPage/SignupPage';
+import SignUpPage from '../SignUpPage/SignUpPage';
 import SignInPage from '../SignInPage/SignInPage';
 import ProfilePage from '../ProfilePage/ProfilePage'
 import * as rangerAPI from '../../services/ranger-api';
 import * as userAPI from '../../services/user-api';
-import Ranger from '../../components/Ranger/Ranger'
+import Ranger from '../../components/Ranger/Ranger';
+import HomePage from '../../pages/HomePage/HomePage';
 import NavBar from '../../components/NavBar/NavBar'
 
 class App extends Component {
@@ -18,8 +19,8 @@ class App extends Component {
 
   /*--------------------------- Callback Methods ---------------------------*/
 
-  handleLogout = () => {
-    userAPI.logout();
+  handleSignOut = () => {
+    userAPI.signOut();
     this.setState({ user: null });
   }
 
@@ -41,7 +42,7 @@ class App extends Component {
       <div className="App">
         <NavBar
           user={this.state.user}
-          handleLogout={this.handleLogout}
+          handleSignOut={this.handleSignOut}
         />
         <Switch>
           <Route exact path='/signin' render={({ history }) => 
@@ -51,7 +52,7 @@ class App extends Component {
             />
           }/>
           <Route exact path='/signup' render={({ history }) => 
-            <SignupPage
+            <SignUpPage
               history={history}
               handleSignupOrSignIn={this.handleSignupOrSignIn}
             />
@@ -65,7 +66,7 @@ class App extends Component {
               <Redirect to='/signin'/>
           }/>
           <Route exact path='/' render={() =>
-            <Ranger />
+            <HomePage />
           }/>
         </Switch>
       </div>

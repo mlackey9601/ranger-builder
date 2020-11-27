@@ -32,6 +32,7 @@
 
 ### ***Future Updates***
 
+- [ ] Make the app scale for multiple sized screens
 - [ ] Add a Bestiary section where stats on different enemies can be looked up
 - [ ] Add an item lookup section so magic items / herbs / potions can be referenced and added to inventory
 - [ ] New users can choose an avatar for their account
@@ -40,9 +41,8 @@
 
 ### ***Credits***
 
-##### App Scaffolding: [Chajr 1.2.2](https://github.com/davidstinson/chajr)
-  
 ##### Joseph McCullough: [Rangers of the Shadow Deep](https://www.drivethrurpg.com/browse/pub/11264)
-  
-##### Credit: [Description](url)
+##### App Scaffolding: [Chajr 1.2.2](https://github.com/davidstinson/chajr)
+
+##### Background: [CSS Gradient](https://cssgradient.io/)
 ***
