@@ -46,7 +46,7 @@ class SignUpForm extends Component {
           <div>
             <input 
               type="text"
-              placeholder="First Name" 
+              placeholder=" First Name" 
               value={this.state.firstName} 
               name="firstName" 
               onChange={this.handleChange} 
@@ -56,7 +56,7 @@ class SignUpForm extends Component {
           <div>
             <input 
               type="text"
-              placeholder="Last Name" 
+              placeholder=" Last Name" 
               value={this.state.lastName} 
               name="lastName" 
               onChange={this.handleChange} 
@@ -66,7 +66,7 @@ class SignUpForm extends Component {
           <div>
             <input 
               type="text"
-              placeholder="Nickname (Optional)" 
+              placeholder=" Nickname (Optional)" 
               value={this.state.nickName} 
               name="nickName" 
               onChange={this.handleChange} 
@@ -76,7 +76,7 @@ class SignUpForm extends Component {
           <div>
             <input 
               type="email"
-              placeholder="Email" 
+              placeholder=" Email" 
               value={this.state.email} 
               name="email" 
               onChange={this.handleChange}
@@ -86,7 +86,7 @@ class SignUpForm extends Component {
           <div>
             <input 
               type="password" 
-              placeholder="Password" 
+              placeholder=" Password" 
               value={this.state.password} 
               name="password" 
               onChange={this.handleChange} 
@@ -96,7 +96,7 @@ class SignUpForm extends Component {
           <div className="form-group">
             <input 
               type="password" 
-              placeholder="Confirm Password" 
+              placeholder=" Confirm" 
               value={this.state.passwordConf} 
               name="passwordConf" 
               onChange={this.handleChange} 
@@ -104,14 +104,16 @@ class SignUpForm extends Component {
           </div>
           &nbsp;&nbsp;&nbsp;
           <center>
-            <div>
-              <button
-                disabled={this.isFormInvalid()}       
-              >
-                Sign Up
-              </button>
-              &nbsp;&nbsp;&nbsp;
-              <Link to='/'>Cancel</Link>
+            <div className="buttons">
+              <button disabled={this.isFormInvalid()} className="signup btn">Sign Up</button>
+              <form action="/">
+                <input
+                  type="submit"
+                  value="Cancel"
+                  className="cancel btn"
+                >
+                </input>
+              </form>
             </div>
           </center>
         </form>

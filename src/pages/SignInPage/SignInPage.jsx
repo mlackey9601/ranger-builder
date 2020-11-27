@@ -56,10 +56,16 @@ class SignInPage extends Component {
           </div>
           &nbsp;&nbsp;&nbsp;
           <center>
-            <div>
-              <button>Sign In</button>
-              &nbsp;&nbsp;&nbsp;
-              <Link to='/'>Cancel</Link>
+            <div className="buttons">
+              <button className="signin btn">Sign In</button>
+              <form action="/">
+                <input
+                  type="submit"
+                  value="Cancel"
+                  className="cancel btn"
+                >
+                </input>
+              </form>
             </div>
           </center>
         </form>

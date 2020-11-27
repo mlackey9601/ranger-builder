@@ -9,9 +9,65 @@
 .signup-heading {
   font-family: 'Cinzel Decorative', cursive;
   font-weight: bold;
+  font-size: 3vmin;
 }
 
 input {
   height: 30px;
   width: 200px;
+
+  border: solid;
+  border-color: rgb(104, 104, 104);
+  border-width: .25vmin;
+  border-radius: .5vmin;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btn {
+  border: solid;
+  border-color: rgb(104, 104, 104);
+  border-width: .25vmin;
+  border-radius: .5vmin;
+
+  font-family: 'Cinzel Decorative', cursive;
+  text-align: center;
+
+  font-size: 1.2vmin;
+
+  height: 3vmin;
+  width: 7vmin;
+
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+}
+
+.cancel {
+  background-color:  rgba(37, 35, 31, 1);
+
+  color: rgba(241, 230, 211, 1);
+}
+
+.cancel:hover {
+  background-color:  rgba(100, 28, 39, 1);
+  color: rgba(255, 255, 255, 1);
+  text-shadow: 0 0 8px rgba(241, 230, 211, 1);
+}
+
+.signup {
+  background-color:  rgba(37, 35, 31, 1);
+ 
+  color: rgba(241, 230, 211, 1);
+}
+
+.signup:hover {
+  background-color:  rgb(24, 29, 75);
+  color: rgba(255, 255, 255, 1);
+  text-shadow: 0 0 8px rgba(241, 230, 211, 1);
 }
