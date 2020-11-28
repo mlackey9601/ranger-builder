@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import * as userAPI from '../../services/user-api';
 
 class SignUpForm extends Component {
@@ -42,7 +41,7 @@ class SignUpForm extends Component {
           <header className="signup-heading">Sign Up</header>
         </center>
         &nbsp;&nbsp;&nbsp;
-        <form onSubmit={this.handleSubmit} >
+        <form>
           <div>
             <input 
               type="text"
@@ -105,15 +104,20 @@ class SignUpForm extends Component {
           &nbsp;&nbsp;&nbsp;
           <center>
             <div className="buttons">
-              <button disabled={this.isFormInvalid()} className="signup btn">Sign Up</button>
-              <form action="/">
-                <input
-                  type="submit"
-                  value="Cancel"
-                  className="cancel btn"
-                >
-                </input>
-              </form>
+              <button
+                className="signup btn"
+                disabled={this.isFormInvalid()}
+                onClick={this.handleSubmit}
+              >
+                Sign Up
+              </button>
+              <input
+                className="cancel btn"
+                type="submit"
+                value="Cancel"
+                formaction="/"
+              >
+              </input>
             </div>
           </center>
         </form>

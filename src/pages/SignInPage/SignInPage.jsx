@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import './SignInPage.css';
 import * as userAPI from '../../services/user-api';
 
@@ -32,7 +31,7 @@ class SignInPage extends Component {
       <div className="SignInPage">
         <header className="heading">Sign In</header>
         &nbsp;&nbsp;&nbsp;
-        <form onSubmit={this.handleSubmit} >
+        <form>
           <div>
             <input 
               autoComplete="off"
@@ -55,19 +54,21 @@ class SignInPage extends Component {
             />
           </div>
           &nbsp;&nbsp;&nbsp;
-          <center>
-            <div className="buttons">
-              <button className="signin btn">Sign In</button>
-              <form action="/">
-                <input
-                  type="submit"
-                  value="Cancel"
-                  className="cancel btn"
-                >
-                </input>
-              </form>
-            </div>
-          </center>
+          <div className="buttons">
+            <button
+              className="signin btn"
+              onClick={this.handleSubmit}
+            >
+              Sign In
+            </button>
+            <input
+              type="submit"
+              value="Cancel"
+              className="cancel btn"
+              formaction="/"
+            >
+            </input>
+          </div>
         </form>
       </div>
     );
