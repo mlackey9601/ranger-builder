@@ -2,13 +2,23 @@ import './ProfilePage.css'
 import React from 'react';
 
 const ProfilePage = (props) => {
+  let nick = props.user.nickName ? <p>NickName: {props.user.nickName}<br/></p> : "";
+  console.log(props.user)
   return (
     <div className="ProfilePage">
       <header className="profile-heading">User Profile</header>
-      <p>Name: {props.user.firstName} {props.user.lastName}</p>
-      <p>It is located at src/pages/ProfilePage/ProfilePage.jsx</p>
-      <p>If you can view this page, it is likely that you have successfully signed a user in!</p>
-      <p>You could use this page as a base to start working from or delete it for a fresh start. Happy building!</p>
+      &nbsp;&nbsp;&nbsp;
+      <div className="profile">
+        <img alt="ranger" src="https://i.imgur.com/vLo3KAi.png" className="avatar"></img>
+        &nbsp;&nbsp;&nbsp;
+        <div className="details">
+          <p>
+            Name: {props.user.firstName} {props.user.lastName}<br/>
+            {nick}
+            Email: {props.user.email}
+          </p>
+        </div>
+      </div>
     </div>
   )
 }

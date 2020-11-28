@@ -1,5 +1,6 @@
 .ProfilePage {
     display: flex;
+    flex-direction: row;
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: center;
@@ -13,4 +14,15 @@
 .profile-heading {
     font-weight: bold;
     font-size: 3vmin;
+}
+
+.avatar {
+    height: 20vmin;
+    width: 20vmin;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
