@@ -21,7 +21,7 @@
 
 ##### Sign up and sign in as a new user and then walk through the Ranger creation page to begin your warband.
 ##### A Trello board was used to keep track of development progress and can be viewed [here](https://trello.com/b/XfxdvytM).
-##### The project itself was deployed using Heroku and can be viewed [here](url).
+<!-- ##### The project itself was deployed using Heroku and can be viewed [here](url). -->
 ***
 
 ### ***Screenshots***
