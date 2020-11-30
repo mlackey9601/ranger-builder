@@ -17,19 +17,24 @@
     color: rgba(37, 35, 31, 1);
 }
 
-.avatar {
-    height: 20vmin;
-    width: 20vmin;
-}
-
 .profile-card {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: start;
     align-items: center;
     height: 25vmin;
     width: 60vmin;
     background-color: rgba(37, 35, 31, .75);
+    border: solid rgba(100, 28, 39, 1);
+    border-width: 0.5vmin;
+    margin: 0;
+}
+
+.avatar {
+    height: 23vmin;
+    width: 23vmin;
+    margin-left: 1vmin;
+    margin-right: 1vmin;
 }
 
 .details-table {
@@ -38,8 +43,9 @@
     justify-content: flex-start;
     align-content: flex-start;
     height: 20vmin;
-    width: 30vmin;
+    width: 34vmin;
     font-size: 1.5vmin;
+    margin-right: 1vmin;
 }
 
 .details-title {
@@ -48,12 +54,10 @@
     font-weight: bold;
     text-align: right;
     width: 10vmin;
-    margin: 0;
-    padding: 0;
 }
 
 .details-item {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: rgba(241, 230, 211, 1);
-    width: 20vmin;
+    width: 24vmin;
 }
