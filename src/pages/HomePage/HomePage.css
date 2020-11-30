@@ -14,3 +14,14 @@
     font-weight: bold;
     font-size: 5vmin;
 }
+
+p {
+    font-size: 2vmin;
+}
+
+.home-img {
+    height: auto;
+    width: 100vmin;
+    border: solid rgba(100, 28, 39, 1);
+    border-width: 0.5vmin;
+}
