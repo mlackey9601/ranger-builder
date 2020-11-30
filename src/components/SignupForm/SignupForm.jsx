@@ -43,7 +43,8 @@ class SignUpForm extends Component {
         &nbsp;&nbsp;&nbsp;
         <form>
           <div>
-            <input 
+            <input
+              autoComplete="off" 
               type="text"
               placeholder=" First Name" 
               value={this.state.firstName} 
@@ -53,7 +54,8 @@ class SignUpForm extends Component {
           </div>
           &nbsp;&nbsp;&nbsp;
           <div>
-            <input 
+            <input
+              autoComplete="off" 
               type="text"
               placeholder=" Last Name" 
               value={this.state.lastName} 
@@ -63,7 +65,8 @@ class SignUpForm extends Component {
           </div>
           &nbsp;&nbsp;&nbsp;
           <div>
-            <input 
+            <input
+              autoComplete="off" 
               type="text"
               placeholder=" Nickname (Optional)" 
               value={this.state.nickName} 
@@ -73,7 +76,8 @@ class SignUpForm extends Component {
           </div>
           &nbsp;&nbsp;&nbsp;
           <div>
-            <input 
+            <input
+              autoComplete="off"
               type="email"
               placeholder=" Email" 
               value={this.state.email} 
@@ -83,7 +87,8 @@ class SignUpForm extends Component {
           </div>
           &nbsp;&nbsp;&nbsp;
           <div>
-            <input 
+            <input
+              autoComplete="off"
               type="password" 
               placeholder=" Password" 
               value={this.state.password} 
@@ -92,8 +97,9 @@ class SignUpForm extends Component {
             />
           </div>
           &nbsp;&nbsp;&nbsp;
-          <div className="form-group">
-            <input 
+          <div>
+            <input
+              autoComplete="off"
               type="password" 
               placeholder=" Confirm" 
               value={this.state.passwordConf} 

@@ -29,14 +29,16 @@ class SignInPage extends Component {
   render() {
     return (
       <div className="SignInPage">
-        <header className="heading">Sign In</header>
+        <center>
+          <header className="heading">Sign In</header>
+        </center>
         &nbsp;&nbsp;&nbsp;
         <form>
           <div>
             <input 
               autoComplete="off"
               type="email" 
-              placeholder="Email"
+              placeholder=" Email"
               value={this.state.email} 
               name="email" 
               onChange={this.handleChange} 
@@ -47,7 +49,7 @@ class SignInPage extends Component {
             <input
               autoComplete="off" 
               type="password"
-              placeholder="Password" 
+              placeholder=" Password" 
               value={this.state.pw} 
               name="pw" 
               onChange={this.handleChange} 
