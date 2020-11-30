@@ -25,7 +25,7 @@
 .profile-card {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     height: 25vmin;
     width: 60vmin;
@@ -38,16 +38,22 @@
     justify-content: flex-start;
     align-content: flex-start;
     height: 20vmin;
+    width: 30vmin;
+    font-size: 1.5vmin;
 }
 
 .details-title {
     font-family: 'Cinzel Decorative', cursive;
     color: rgba(238, 45, 50, 1);
     font-weight: bold;
-    text-align: end;
+    text-align: right;
+    width: 10vmin;
+    margin: 0;
+    padding: 0;
 }
 
 .details-item {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: rgba(241, 230, 211, 1);
+    width: 20vmin;
 }
