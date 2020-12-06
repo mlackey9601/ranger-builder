@@ -1,0 +1,62 @@
+.AboutPage {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    height: 95vmin;
+    width: 100vmax;
+    font-family: 'Cinzel Decorative', cursive;
+    color: rgba(37, 35, 31, 1);
+    margin-top: 3vmin;
+}
+
+.about-heading {
+    font-weight: bold;
+    font-size: 5vmin;
+    color: rgba(100, 28, 39, 1);
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    width: 70vmax;
+    font-size: 2vmin;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-img {
+    height: auto;
+    width: 30vmax;
+    border: solid rgba(100, 28, 39, 1);
+    border-width: 0.5vmin;
+    background-color: rgba(100, 28, 39, 1);
+    margin-right: 3vmin;
+}
+
+.about-text {
+    width: 40vmax;
+    font-family: 'Cormorant', serif;
+    font-size: 2.4vmin;
+}
+
+.W {
+    font-size: 4vmin;
+    color: rgba(100, 28, 39, 1);
+}
+
+.img-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 40vmax;
+    
+}
+
+.signature {
+    width: 17vmax;
+    margin-right: 4vmin;
+    margin-top: -2vmin;
+}

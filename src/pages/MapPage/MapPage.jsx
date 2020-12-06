@@ -8,7 +8,7 @@ const MapPage = () => {
         <div className="MapPage">
             <header className="map-heading">Map of Alladore</header>
             &nbsp;&nbsp;&nbsp;
-            <img className="home-img" alt="cover" src="https://i.imgur.com/4issJrn.png"></img>
+            <img className="map-img" alt="cover" src="https://i.imgur.com/4issJrn.png"></img>
             <p className='map-credit'>Map Credit: Alexei Vella</p>
         </div>
     )

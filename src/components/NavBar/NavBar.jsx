@@ -7,9 +7,13 @@ const NavBar = (props) => {
     <div className='NavBar'>
       <div className="navbar-left">
         <Link to='/' className='NavBar-link'>Home</Link>
+        &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+        <Link to='/about' className='NavBar-link'>About</Link>
       </div>
       <div className='navbar-center'>
         <Link to='/map' className='NavBar-link'>Map</Link>
+        &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+        <Link to='/bestiary' className='NavBar-link'>Bestiary</Link>
         &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
         <Link to='/warband' className='NavBar-link'>Warband</Link>
         &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -27,9 +31,13 @@ const NavBar = (props) => {
     <div className='NavBar'>
       <div className="navbar-left">
         <Link to='/' className='NavBar-link'>Home</Link>
+        &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+        <Link to='/about' className='NavBar-link'>About</Link>
       </div>
       <div className='navbar-center'>
         <Link to='/map' className='NavBar-link'>Map</Link>
+        &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+        <Link to='/bestiary' className='NavBar-link'>Bestiary</Link>
         &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
         <Link to='/warband' className='NavBar-link'>Warband</Link>
         &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;

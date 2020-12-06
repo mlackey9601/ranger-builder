@@ -10,6 +10,7 @@ import Ranger from '../../components/Ranger/Ranger';
 import HomePage from '../../pages/HomePage/HomePage';
 import NavBar from '../../components/NavBar/NavBar';
 import MapPage from '../../pages/MapPage/MapPage';
+import AboutPage from '../../pages/AboutPage/AboutPage';
 
 class App extends Component {
   state = {
@@ -71,6 +72,9 @@ class App extends Component {
           }/>
           <Route exact path='/map' render={() =>
             <MapPage />
+          }/>
+          <Route exact path='/about' render={() =>
+            <AboutPage />
           }/>
         </Switch>
       </div>
