@@ -6,7 +6,7 @@ const HomePage = (props) => {
     <div className="HomePage">
         <header className="home-heading">Ranger Builder</header>
         <p>A warband building app for Rangers of the Shadow Deep</p>
-          <img className="home-img" alt="cover" src="https://i.imgur.com/dUvbVJZ.jpg"></img>
+        <img className="home-img" alt="cover" src="https://i.imgur.com/dUvbVJZ.jpg"></img>
     </div>
   )
 }

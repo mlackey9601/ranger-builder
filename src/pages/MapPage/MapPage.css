@@ -1,29 +1,31 @@
-.HomePage {
+.MapPage {
     display: flex;
+    flex-direction: row;
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: center;
     height: 95vmin;
     width: 100vmax;
-    font-family: 'Cinzel Decorative', cursive;
-    color: rgba(37, 35, 31, 1);
     margin-top: 3vmin;
 }
 
-.home-heading {
+.map-heading {
+    font-family: 'Cinzel Decorative', cursive;
     font-weight: bold;
-    font-size: 5vmin;
-    color: rgba(100, 28, 39, 1);
+    font-size: 3vmin;
+    color: rgba(37, 35, 31, 1);
 }
 
-p {
-    font-size: 2vmin;
-}
-
-.home-img {
+.map-img {
     height: auto;
     width: 100vmin;
     border: solid rgba(100, 28, 39, 1);
     border-width: 0.5vmin;
     background-color: rgba(100, 28, 39, 1);
+}
+
+.map-credit {
+    font-family: 'Cinzel Decorative', cursive;
+    color: rgba(241, 230, 211, 1);
+    font-size: 1vmin;
 }

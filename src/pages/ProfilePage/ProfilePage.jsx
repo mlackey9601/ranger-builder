@@ -1,4 +1,4 @@
-import './ProfilePage.css'
+import './ProfilePage.css';
 import React from 'react';
 
 const ProfilePage = (props) => {

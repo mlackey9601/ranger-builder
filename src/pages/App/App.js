@@ -8,7 +8,8 @@ import * as rangerAPI from '../../services/ranger-api';
 import * as userAPI from '../../services/user-api';
 import Ranger from '../../components/Ranger/Ranger';
 import HomePage from '../../pages/HomePage/HomePage';
-import NavBar from '../../components/NavBar/NavBar'
+import NavBar from '../../components/NavBar/NavBar';
+import MapPage from '../../pages/MapPage/MapPage';
 
 class App extends Component {
   state = {
@@ -67,6 +68,9 @@ class App extends Component {
           }/>
           <Route exact path='/' render={() =>
             <HomePage />
+          }/>
+          <Route exact path='/map' render={() =>
+            <MapPage />
           }/>
         </Switch>
       </div>

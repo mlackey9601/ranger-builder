@@ -33,6 +33,7 @@
 ### ***Future Updates***
 
 - [ ] Make the app scale for multiple sized screens
+- [ ] Add interactive map section
 - [ ] Add a Bestiary section where stats on different enemies can be looked up
 - [ ] Add an item lookup section so magic items / herbs / potions can be referenced and added to inventory
 - [ ] New users can choose an avatar for their account
@@ -42,6 +43,9 @@
 ### ***Credits***
 
 ##### Joseph McCullough: [Rangers of the Shadow Deep](https://www.drivethrurpg.com/browse/pub/11264)
+
+##### Map of Alladore: [Alexei Vella](https://www.facebook.com/groups/199819667485240/permalink/599052670895269)
+
 ##### App Scaffolding: [Chajr 1.2.2](https://github.com/davidstinson/chajr)
 
 ##### Background: [CSS Gradient](https://cssgradient.io/)

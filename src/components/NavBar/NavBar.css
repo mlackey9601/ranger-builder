@@ -27,12 +27,27 @@
   text-shadow: 0 0 8px rgba(255, 255, 255, 1);
 }
 
-.left {
+.navbar-left {
   order: 1;
   padding-left: 1vmin;
+  width: 20vmax;
+  align-self: left;
+  text-align: left;
 }
 
-.right {
+.navbar-center {
   order: 2;
+  padding-left: 1vmin;
   padding-right: 1vmin;
+  width: 60vmax;
+  align-self: center;
+  text-align: center;
+}
+
+.navbar-right {
+  order: 3;
+  padding-right: 1vmin;
+  width: 20vmax;
+  align-self: right;
+  text-align: right;
 }
