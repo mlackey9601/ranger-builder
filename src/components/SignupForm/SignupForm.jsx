@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import * as userAPI from '../../services/user-api';
+import './SignUpForm.css';
 
 class SignUpForm extends Component {
 
@@ -36,20 +37,16 @@ class SignUpForm extends Component {
 
   render() {
     return (
-      <div>
-        <center>
-          <header className="signup-heading">Sign Up</header>
-        </center>
-        &nbsp;&nbsp;&nbsp;
-        <form>
+      <div className="form-container">
+        <form autoComplete="off">
           <div>
             <input
               autoComplete="off" 
               type="text"
-              placeholder=" First Name" 
+              placeholder="First Name" 
               value={this.state.firstName} 
               name="firstName" 
-              onChange={this.handleChange} 
+              onChange={this.handleChange}
             />
           </div>
           &nbsp;&nbsp;&nbsp;
@@ -57,10 +54,10 @@ class SignUpForm extends Component {
             <input
               autoComplete="off" 
               type="text"
-              placeholder=" Last Name" 
+              placeholder="Last Name" 
               value={this.state.lastName} 
               name="lastName" 
-              onChange={this.handleChange} 
+              onChange={this.handleChange}
             />
           </div>
           &nbsp;&nbsp;&nbsp;
@@ -68,10 +65,10 @@ class SignUpForm extends Component {
             <input
               autoComplete="off" 
               type="text"
-              placeholder=" Nickname (Optional)" 
+              placeholder="Nickname (Optional)" 
               value={this.state.nickName} 
               name="nickName" 
-              onChange={this.handleChange} 
+              onChange={this.handleChange}
             />
           </div>
           &nbsp;&nbsp;&nbsp;
@@ -79,9 +76,21 @@ class SignUpForm extends Component {
             <input
               autoComplete="off"
               type="email"
-              placeholder=" Email" 
+              placeholder="Email" 
               value={this.state.email} 
               name="email" 
+              onChange={this.handleChange}
+              required
+            />
+          </div>
+          &nbsp;&nbsp;&nbsp;
+          <div>
+            <input
+              autoComplete="off"
+              type="password" 
+              placeholder="Password" 
+              value={this.state.password} 
+              name="password" 
               onChange={this.handleChange}
             />
           </div>
@@ -90,21 +99,10 @@ class SignUpForm extends Component {
             <input
               autoComplete="off"
               type="password" 
-              placeholder=" Password" 
-              value={this.state.password} 
-              name="password" 
-              onChange={this.handleChange} 
-            />
-          </div>
-          &nbsp;&nbsp;&nbsp;
-          <div>
-            <input
-              autoComplete="off"
-              type="password" 
-              placeholder=" Confirm" 
+              placeholder="Confirm" 
               value={this.state.passwordConf} 
               name="passwordConf" 
-              onChange={this.handleChange} 
+              onChange={this.handleChange}
             />
           </div>
           &nbsp;&nbsp;&nbsp;

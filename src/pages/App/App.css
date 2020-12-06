@@ -11,3 +11,23 @@
 h1 {
   font-family: 'Cinzel Decorative', cursive;
 }
+
+input {
+  height: 3.5vmin;
+  width: 22vmin;
+
+  border: solid;
+  border-color: rgba(37, 35, 31, 1);
+  border-width: .25vmin;
+  border-radius: .5vmin;
+  outline: none;
+
+  font-size: 1.75vmin;
+  font-family: 'Cormorant', serif;
+
+  padding-left: 1vmin;
+}
+
+input:focus {
+  border-color: rgba(100, 28, 39, 1);
+}

@@ -14,16 +14,19 @@
   font-size: 3vmin;
 }
 
-input {
-  height: 3.5vmin;
-  width: 22vmin;
+.form-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 75vmin;
+  width: 30vmax;
+}
 
-  border: solid;
-  border-color: rgb(104, 104, 104);
-  border-width: .25vmin;
-  border-radius: .5vmin;
-
-  font-size: 1.25vmin;
+.signin-container {
+  display: flex;
+  flex-direction: row;
+  width: 60vmax;
 }
 
 .buttons {
@@ -42,10 +45,10 @@ input {
   font-family: 'Cinzel Decorative', cursive;
   text-align: center;
 
-  font-size: 1.2vmin;
+  font-size: 1.3vmin;
 
-  height: 3vmin;
-  width: 7vmin;
+  height: 4vmin;
+  width: 8vmin;
 
   cursor: pointer;
   outline: none;

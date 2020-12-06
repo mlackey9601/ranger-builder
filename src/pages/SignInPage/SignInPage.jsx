@@ -29,49 +29,52 @@ class SignInPage extends Component {
   render() {
     return (
       <div className="SignInPage">
-        <center>
-          <header className="signin-heading">Sign In</header>
-        </center>
+        <header className="signin-heading">Sign In</header>
         &nbsp;&nbsp;&nbsp;
-        <form>
-          <div>
-            <input 
-              autoComplete="off"
-              type="email" 
-              placeholder=" Email"
-              value={this.state.email} 
-              name="email" 
-              onChange={this.handleChange} 
-            />
+        <div className="signin-container">
+          <img className="signup-img" alt="weapons" src="https://i.imgur.com/uFbwfvd.jpg"></img>
+          <div className="form-container">
+            <form autoComplete="off">
+              <div>
+                <input 
+                  autoComplete="off"
+                  type="email" 
+                  placeholder=" Email"
+                  value={this.state.email} 
+                  name="email" 
+                  onChange={this.handleChange}
+                />
+              </div>
+              &nbsp;&nbsp;&nbsp;
+              <div>
+                <input
+                  autoComplete="off" 
+                  type="password"
+                  placeholder=" Password" 
+                  value={this.state.pw} 
+                  name="pw" 
+                  onChange={this.handleChange}
+                />
+              </div>
+              &nbsp;&nbsp;&nbsp;
+              <div className="buttons">
+                <button
+                  className="signin btn"
+                  onClick={this.handleSubmit}
+                >
+                  Sign In
+                </button>
+                <input
+                  type="submit"
+                  value="Cancel"
+                  className="cancel btn"
+                  formaction="/"
+                >
+                </input>
+              </div>
+            </form>
           </div>
-          &nbsp;&nbsp;&nbsp;
-          <div>
-            <input
-              autoComplete="off" 
-              type="password"
-              placeholder=" Password" 
-              value={this.state.pw} 
-              name="pw" 
-              onChange={this.handleChange} 
-            />
-          </div>
-          &nbsp;&nbsp;&nbsp;
-          <div className="buttons">
-            <button
-              className="signin btn"
-              onClick={this.handleSubmit}
-            >
-              Sign In
-            </button>
-            <input
-              type="submit"
-              value="Cancel"
-              className="cancel btn"
-              formaction="/"
-            >
-            </input>
-          </div>
-        </form>
+        </div>
       </div>
     );
   }
