@@ -13,15 +13,13 @@ const NavBar = (props) => {
         <Link to='/contact' className='NavBar-link'>Contact</Link>
       </div>
       <div className='navbar-center'>
-        <Link to='/map' className='NavBar-link'>Map</Link>
+        <Link to='/references' className='NavBar-link'>References</Link>
         &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
         <Link to='/warbands' className='NavBar-link'>Warbands</Link>
         &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
         <Link to='/rangers' className='NavBar-link'>Rangers</Link>
         &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
         <Link to='/companions' className='NavBar-link'>Companions</Link>
-        &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-        <Link to='/bestiary' className='NavBar-link'>Bestiary</Link>
       </div>
       <div className="navbar-right">
         <Link to='/profile' className='NavBar-link'>Profile</Link>
@@ -39,9 +37,7 @@ const NavBar = (props) => {
         <Link to='/contact' className='NavBar-link'>Contact</Link>
       </div>
       <div className='navbar-center'>
-        <Link to='/map' className='NavBar-link'>Map</Link>
-        &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-        <Link to='/bestiary' className='NavBar-link'>Bestiary</Link>
+        <Link to='/references' className='NavBar-link'>References</Link>
       </div>
       <div className="navbar-right">
         <Link to='/signup' className='NavBar-link'>Sign Up</Link>

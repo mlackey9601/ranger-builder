@@ -8,11 +8,12 @@ import * as rangerAPI from '../../services/ranger-api';
 import * as userAPI from '../../services/user-api';
 import HomePage from '../../pages/HomePage/HomePage';
 import NavBar from '../../components/NavBar/NavBar';
-import MapPage from '../../pages/MapPage/MapPage';
 import AboutPage from '../../pages/AboutPage/AboutPage';
 import ContactPage from '../../pages/ContactPage/ContactPage'
-import BestiaryPage from '../../pages/BestiaryPage/BestiaryPage';
 import RangersPage from '../../pages/RangersPage/RangersPage';
+import ReferencesPage from '../../pages/ReferencesPage/ReferencesPage';
+import MapPage from '../../pages/MapPage/MapPage';
+import BestiaryPage from '../../pages/BestiaryPage/BestiaryPage';
 import CompanionsPage from '../../pages/CompanionsPage/CompanionsPage';
 import WarbandsPage from '../../pages/WarbandsPage/WarbandsPage';
 
@@ -74,17 +75,20 @@ class App extends Component {
           <Route exact path='/' render={() =>
             <HomePage />
           }/>
-          <Route exact path='/map' render={() =>
+          <Route exact path='/references' render={() =>
+            <ReferencesPage />
+          }/>
+          <Route exact path='/references/map' render={() =>
             <MapPage />
+          }/>
+          <Route exact path='/references/bestiary' render={() =>
+            <BestiaryPage />
           }/>
           <Route exact path='/about' render={() =>
             <AboutPage />
           }/>
           <Route exact path='/contact' render={() =>
             <ContactPage />
-          }/>
-          <Route exact path='/bestiary' render={() =>
-            <BestiaryPage />
           }/>
           <Route exact path='/warbands' render={() =>
             <WarbandsPage />

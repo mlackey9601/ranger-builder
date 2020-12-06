@@ -1,0 +1,51 @@
+.ReferencesPage {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3vmin;
+  outline: none;
+  text-decoration: none;
+}
+
+.references-heading {
+  font-family: 'Cinzel Decorative', cursive;
+  font-weight: bold;
+  font-size: 3vmin;
+}
+
+.references-img {
+  height: auto;
+  width: 30vmax;
+  border: solid rgba(100, 28, 39, 1);
+  border-width: 0.5vmin;
+  background-color: rgba(100, 28, 39, 1);
+  margin-right: 3vmin;
+}
+
+.references-container {
+  display: flex;
+  flex-direction: row;
+  width: 60vmax;
+}
+
+.references-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 65vmin;
+  width: 30vmax;
+  margin-top: 5vmin;
+  margin-bottom: 5vmin;
+}
+
+.reference, .reference:visited {
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 2.75vmin;
+  color: rgba(100, 28, 39, 1);
+  text-decoration: none;
+}
+
+.reference:hover {
+  color: rgba(238, 45, 50, 1);
+}
