@@ -33,10 +33,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 65vmin;
   width: 30vmax;
-  margin-top: 2vmin;
-  margin-bottom: 2vmin;
 }
 
 .link-row {
@@ -57,8 +54,8 @@
   font-size: 2vmin;
   color: rgba(241, 230, 211, 1);
   text-decoration: none;
-  height: 14.75vmin;
-  width: 14.75vmin;
+  height: 13.75vmin;
+  width: 13.75vmin;
   padding: .5vmin;
   background-color: rgba(100, 28, 39, 1);
   border: solid rgba(241, 230, 211, 1);
@@ -68,6 +65,7 @@
 }
 
 .link-box:hover {
-  background-color: rgba(238, 45, 50, 1);
+  background: rgb(238,45,50);
+  background: linear-gradient(0deg, rgba(238,45,50,1) 0%, rgba(158,35,44,1) 34%, rgba(127,31,41,1) 49%, rgba(100,28,39,1) 74%, rgba(100,28,39,1) 100%);
   text-shadow: 0 0 8px rgba(255, 255, 255, 1);
 }
