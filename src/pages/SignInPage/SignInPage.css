@@ -8,7 +8,7 @@
   text-decoration: none;
 }
 
-.heading {
+.signin-heading {
   font-family: 'Cinzel Decorative', cursive;
   font-weight: bold;
   font-size: 3vmin;
@@ -54,7 +54,6 @@ input {
 
 .cancel {
   background-color:  rgba(37, 35, 31, 1);
-
   color: rgba(241, 230, 211, 1);
 }
 

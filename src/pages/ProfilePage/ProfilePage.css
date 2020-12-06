@@ -56,7 +56,8 @@
 }
 
 .details-item {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Cormorant', serif;
+    font-size: 1.5vmin;
     color: rgba(241, 230, 211, 1);
     width: 24vmin;
 }

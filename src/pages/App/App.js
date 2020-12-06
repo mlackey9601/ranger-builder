@@ -6,11 +6,14 @@ import SignInPage from '../SignInPage/SignInPage';
 import ProfilePage from '../ProfilePage/ProfilePage'
 import * as rangerAPI from '../../services/ranger-api';
 import * as userAPI from '../../services/user-api';
-import Ranger from '../../components/Ranger/Ranger';
 import HomePage from '../../pages/HomePage/HomePage';
 import NavBar from '../../components/NavBar/NavBar';
 import MapPage from '../../pages/MapPage/MapPage';
 import AboutPage from '../../pages/AboutPage/AboutPage';
+import BestiaryPage from '../../pages/BestiaryPage/BestiaryPage';
+import RangersPage from '../../pages/RangersPage/RangersPage';
+import CompanionsPage from '../../pages/CompanionsPage/CompanionsPage';
+import WarbandsPage from '../../pages/WarbandsPage/WarbandsPage';
 
 class App extends Component {
   state = {
@@ -75,6 +78,18 @@ class App extends Component {
           }/>
           <Route exact path='/about' render={() =>
             <AboutPage />
+          }/>
+          <Route exact path='/bestiary' render={() =>
+            <BestiaryPage />
+          }/>
+          <Route exact path='/warbands' render={() =>
+            <WarbandsPage />
+          }/>
+          <Route exact path='/rangers' render={() =>
+            <RangersPage />
+          }/>
+          <Route exact path='/companions' render={() =>
+            <CompanionsPage />
           }/>
         </Switch>
       </div>

@@ -30,7 +30,7 @@ class SignInPage extends Component {
     return (
       <div className="SignInPage">
         <center>
-          <header className="heading">Sign In</header>
+          <header className="signin-heading">Sign In</header>
         </center>
         &nbsp;&nbsp;&nbsp;
         <form>

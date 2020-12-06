@@ -29,3 +29,13 @@
     color: rgba(241, 230, 211, 1);
     font-size: 1vmin;
 }
+
+.credit-link, .credit-link:visited {
+    text-decoration: none;
+    color: rgba(241, 230, 211, 1);
+}
+
+.credit-link:hover {
+    text-decoration: none;
+    color: rgba(238, 45, 50, 1);
+}
