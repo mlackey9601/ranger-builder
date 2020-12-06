@@ -1,4 +1,4 @@
-![Ranger Builder](public/banner.png)
+![Ranger Builder](public/images/readme/banner.png)
 
 ### Date: 11/25/2020
 
@@ -14,7 +14,7 @@
 
 ### ***Technologies Used***
 
-![Technologies Used](public/tech-banner.png)
+![Technologies Used](public/images/readme/tech-banner.png)
 ***
 
 ### ***Getting Started***
@@ -27,7 +27,7 @@
 ### ***Screenshots***
 
 ###### Welcome Page Concept
-![Welcome Page](public/concept1.png)
+![Welcome Page](public/images/readme/concepts/concept1.png)
 ***
 
 ### ***Future Updates***

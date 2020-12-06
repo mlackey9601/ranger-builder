@@ -14,7 +14,7 @@ const ProfilePage = (props) => {
       <header className="profile-heading">User Profile</header>
       &nbsp;&nbsp;&nbsp;
       <div className="profile-card">
-        <img alt="ranger" src="https://i.imgur.com/vLo3KAi.png" className="avatar"></img>
+        <img alt="ranger" src="https://i.imgur.com/YMpJ35H.png" className="avatar"></img>
         <table>
           <tbody className="details-table">
             <tr>
