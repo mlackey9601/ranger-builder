@@ -9,6 +9,8 @@ const NavBar = (props) => {
         <Link to='/' className='NavBar-link'>Home</Link>
         &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
         <Link to='/about' className='NavBar-link'>About</Link>
+        &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+        <Link to='/contact' className='NavBar-link'>Contact</Link>
       </div>
       <div className='navbar-center'>
         <Link to='/map' className='NavBar-link'>Map</Link>
@@ -33,6 +35,8 @@ const NavBar = (props) => {
         <Link to='/' className='NavBar-link'>Home</Link>
         &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
         <Link to='/about' className='NavBar-link'>About</Link>
+        &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+        <Link to='/contact' className='NavBar-link'>Contact</Link>
       </div>
       <div className='navbar-center'>
         <Link to='/map' className='NavBar-link'>Map</Link>

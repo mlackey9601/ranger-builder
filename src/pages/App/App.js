@@ -10,6 +10,7 @@ import HomePage from '../../pages/HomePage/HomePage';
 import NavBar from '../../components/NavBar/NavBar';
 import MapPage from '../../pages/MapPage/MapPage';
 import AboutPage from '../../pages/AboutPage/AboutPage';
+import ContactPage from '../../pages/ContactPage/ContactPage'
 import BestiaryPage from '../../pages/BestiaryPage/BestiaryPage';
 import RangersPage from '../../pages/RangersPage/RangersPage';
 import CompanionsPage from '../../pages/CompanionsPage/CompanionsPage';
@@ -78,6 +79,9 @@ class App extends Component {
           }/>
           <Route exact path='/about' render={() =>
             <AboutPage />
+          }/>
+          <Route exact path='/contact' render={() =>
+            <ContactPage />
           }/>
           <Route exact path='/bestiary' render={() =>
             <BestiaryPage />
