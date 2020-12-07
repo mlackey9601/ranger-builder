@@ -11,22 +11,24 @@ const ReferencesPage = () => {
           <img className="references-img" alt="ranger" src="https://i.imgur.com/4t4IFi2.jpg"></img>
           <div className="references-links">
             <div className="link-row">
+              <Link to='/references/playorder' className='link-box'>Play Order</Link>
               <Link to='/references/map' className="link-box">Map</Link>
               <Link to='/references/bestiary' className='link-box'>Bestiary</Link>
-              <Link to='/references/endofgame' className='link-box'>End of Game</Link>
             </div>
             <div className="link-row">
+              <Link to='/references/skills' className='link-box'>Skills</Link>
               <Link to='/references/abilities' className='link-box'>Heroic Abilities</Link>
               <Link to='/references/spells' className='link-box'>Spells</Link>
-              <Link to='/references/skills' className='link-box'>Skills</Link>
             </div>
             <div className="link-row">
               <Link to='/references/equipment' className='link-box'>Equipment</Link>
-              <Link to='/references/herbsandpotions' className='link-box'>Herbs & Potions</Link>
               <Link to='/references/weaponsandarmour' className='link-box'>Weapons & Armour</Link>
+              <Link to='/references/herbsandpotions' className='link-box'>Herbs & Potions</Link>
             </div>
             <div className="link-row">
               <Link to='/references/magicitems' className='link-box'>Magic Items</Link>
+              <Link to='/references/conditions' className='link-box'>Conditions</Link>
+              <Link to='/references/endofgame' className='link-box'>End of Game</Link>
             </div>
           </div>
         </div>

@@ -20,7 +20,7 @@
   border: solid rgba(100, 28, 39, 1);
   border-width: 0.5vmin;
   background-color: rgba(100, 28, 39, 1);
-  margin-right: 3vmin;
+  margin-right: 1vmin;
 }
 
 .references-container {
@@ -33,6 +33,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
   width: 30vmax;
 }
 
@@ -54,8 +55,8 @@
   font-size: 2vmin;
   color: rgba(241, 230, 211, 1);
   text-decoration: none;
-  height: 13.75vmin;
-  width: 13.75vmin;
+  height: 8vmax;
+  width: 8vmax;
   padding: .5vmin;
   background-color: rgba(100, 28, 39, 1);
   border: solid rgba(241, 230, 211, 1);
@@ -65,6 +66,7 @@
 }
 
 .link-box:hover {
+  box-shadow: 0 1vmin 4vmin 0 rgba(55, 55, 55, 1);
   background: rgb(238,45,50);
   background: linear-gradient(0deg, rgba(238,45,50,1) 0%, rgba(158,35,44,1) 34%, rgba(127,31,41,1) 49%, rgba(100,28,39,1) 74%, rgba(100,28,39,1) 100%);
   text-shadow: 0 0 8px rgba(255, 255, 255, 1);
