@@ -6,19 +6,99 @@
     margin-top: 3vmin;
     outline: none;
     text-decoration: none;
-  }
-  
-  .playorder-heading {
+}
+
+.playorder-heading {
     font-family: 'Cinzel Decorative', cursive;
     font-weight: bold;
     font-size: 3vmin;
-  }
-  
-  .playorder-img {
+}
+
+.playorder-img {
     height: auto;
     width: 30vmax;
     border: solid rgba(100, 28, 39, 1);
     border-width: 0.5vmin;
     background-color: rgba(100, 28, 39, 1);
     margin-right: 3vmin;
-  }
+}
+
+.playorder-container {
+    display: flex;
+    flex-direction: row;
+    width: 60vmax;
+    font-size: 2vmin;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vmax;
+}
+
+.playorder-intro {
+    font-family: 'Cormorant', serif;
+    text-align: center;
+    font-size: 1.5vmin;
+}
+
+.link, .link:visited {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgba(100, 28, 39, 1);
+}
+
+.link:hover {
+    color: rgba(238, 45, 50, 1);
+}
+
+.supplement-card {
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 2;
+    width: 28vmax;
+    height: 4vmax;
+    background-color: rgba(241, 230, 211, 1);
+    border: solid rgba(100, 28, 39, 1);
+    color: rgba(37, 35, 31, 1);
+    padding: .5vmin;
+    margin: .5vmin;
+}
+
+.supplement-card:hover {
+    background: rgb(238,45,50);
+    background: linear-gradient(0deg, rgba(238,45,50,1) 0%, rgba(240,134,127,1) 8%, rgba(241,179,166,1) 17%, rgba(241,189,175,1) 24%, rgba(241,230,211,1) 50%, rgba(241,230,211,1) 100%);
+    box-shadow: 0 1vmin 4vmin 0 rgba(55, 55, 55, 1);
+}
+
+.supplement-title {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 2.5vmin;
+    color: rgba(238, 45, 50, 1);
+    text-align: left;
+}
+
+.level {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 1.75vmin;
+    text-align: right;
+}
+
+.description {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    font-family: 'Cormorant', serif;
+    font-size: 1.5vmin;
+    text-align: left;
+}

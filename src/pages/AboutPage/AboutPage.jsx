@@ -1,4 +1,4 @@
-import './AboutPage.css'
+import './AboutPage.css';
 import React from 'react';
 
 const AboutPage = () => {
