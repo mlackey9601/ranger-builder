@@ -14,6 +14,7 @@ import RangersPage from '../../pages/RangersPage/RangersPage';
 import ReferencesPage from '../../pages/ReferencesPage/ReferencesPage';
 import MapPage from '../../pages/MapPage/MapPage';
 import BestiaryPage from '../../pages/BestiaryPage/BestiaryPage';
+import PlayOrderPage from '../../pages/PlayOrderPage/PlayOrderPage';
 import CompanionsPage from '../../pages/CompanionsPage/CompanionsPage';
 import WarbandsPage from '../../pages/WarbandsPage/WarbandsPage';
 
@@ -83,6 +84,9 @@ class App extends Component {
           }/>
           <Route exact path='/references/bestiary' render={() =>
             <BestiaryPage />
+          }/>
+          <Route exact path='/references/playorder' render={() =>
+            <PlayOrderPage />
           }/>
           <Route exact path='/about' render={() =>
             <AboutPage />
