@@ -4,7 +4,7 @@
 
 #### By: Michael Lackey
 
-#### [Website](https://michaellackey.com/){:target="_blank"} | [GitHub](https://github.com/mlackey9601){:target="_blank"} | [LinkedIn](https://www.linkedin.com/in/michaelglackey/){:target="_blank"} | [Vettery](https://www.vettery.com/ga/employers){:target="_blank"}
+#### [Website](https://michaellackey.com/) | [GitHub](https://github.com/mlackey9601) | [LinkedIn](https://www.linkedin.com/in/michaelglackey/) | [Vettery](https://www.vettery.com/ga/employers)
 ***
 
 ### ***Description***
@@ -20,7 +20,7 @@
 ### ***Getting Started***
 
 ##### Sign up and sign in as a new user and then walk through the Ranger creation page to begin your warband.
-##### A Trello board was used to keep track of development progress and can be viewed [here](https://trello.com/b/XfxdvytM){:target="_blank"}.
+##### A Trello board was used to keep track of development progress and can be viewed [here](https://trello.com/b/XfxdvytM).
 <!-- ##### The project itself was deployed using Heroku and can be viewed [here](url). -->
 ***
 
@@ -42,15 +42,15 @@
 
 ### ***Credits***
 
-##### Joseph McCullough: [Rangers of Shadow Deep](https://www.drivethrurpg.com/browse/pub/11264){:target="_blank"}
+##### Joseph McCullough: [Rangers of Shadow Deep](https://www.drivethrurpg.com/browse/pub/11264)
 
-##### Map of Alladore: [Alexei Vella](https://www.facebook.com/groups/199819667485240/permalink/599052670895269){:target="_blank"}
+##### Map of Alladore: [Alexei Vella](https://www.facebook.com/groups/199819667485240/permalink/599052670895269)
 
-##### App Scaffolding: [Chajr 1.2.2](https://github.com/davidstinson/chajr){:target="_blank"}
+##### App Scaffolding: [Chajr 1.2.2](https://github.com/davidstinson/chajr)
 
-##### Select React Components: [Material-UI](https://material-ui.com/){:target="_blank"}
+##### Select React Components: [Material-UI](https://material-ui.com/)
 
-##### Background: [CSS Gradient](https://cssgradient.io/){:target="_blank"}
+##### Background: [CSS Gradient](https://cssgradient.io/)
 
 
 ***
