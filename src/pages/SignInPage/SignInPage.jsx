@@ -1,6 +1,58 @@
 import React, { Component } from 'react';
 import './SignInPage.css';
 import * as userAPI from '../../services/user-api';
+import { withStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
+import TextField from '@material-ui/core/TextField';
+import InputAdornment from '@material-ui/core/InputAdornment';
+
+const handleClickShowPassword = () => {
+  setValues({ ...values, showPassword: !values.showPassword });
+};
+
+const handleMouseDownPassword = (event) => {
+  event.preventDefault();
+};
+
+const CancelButton = withStyles((theme) => ({
+  root: {
+    color: 'rgba(241, 230, 211, 1)',
+    backgroundColor: 'rgba(37, 35, 31, 1)',
+    fontFamily: 'Cinzel Decorative',
+    textAlign: 'center',
+    fontSize: '1.2vmin',
+    height: '4vmin',
+    width: '9vmin',
+    cursor: 'pointer',
+    outline: 'none',
+    textDecoration: 'none',
+    '&:hover': {
+      backgroundColor: 'rgba(100, 28, 39, 1)',
+      color: 'rgba(255, 255, 255, 1)',
+      textShadow: '0 0 8px rgba(241, 230, 211, 1)',
+    },
+  },
+}))(Button);
+
+const SignInButton = withStyles((theme) => ({
+  root: {
+    color: 'rgba(241, 230, 211, 1)',
+    backgroundColor: 'rgba(37, 35, 31, 1)',
+    fontFamily: 'Cinzel Decorative',
+    textAlign: 'center',
+    fontSize: '1.2vmin',
+    height: '4vmin',
+    width: '9vmin',
+    cursor: 'pointer',
+    outline: 'none',
+    textDecoration: 'none',
+    '&:hover': {
+      backgroundColor: 'rgba(48, 88, 38, 1)',
+      color: 'rgba(255, 255, 255, 1)',
+      textShadow: '0 0 8px rgba(241, 230, 211, 1)',
+    },
+  },
+}))(Button);
 
 class SignInPage extends Component {
   
@@ -36,12 +88,12 @@ class SignInPage extends Component {
           <div className="form-container">
             <form autoComplete="off">
               <div>
-                <input 
+                <input
+                  label="Email"
                   autoComplete="off"
-                  type="email" 
-                  placeholder=" Email"
-                  value={this.state.email} 
-                  name="email" 
+                  type="email"
+                  value={this.state.email}
+                  name="email"
                   onChange={this.handleChange}
                 />
               </div>
@@ -58,19 +110,19 @@ class SignInPage extends Component {
               </div>
               &nbsp;&nbsp;&nbsp;
               <div className="buttons">
-                <button
-                  className="signin btn"
+                <SignInButton
+                  variant="contained"
                   onClick={this.handleSubmit}
                 >
                   Sign In
-                </button>
-                <input
+                </SignInButton>
+                <CancelButton
+                  variant="contained"
                   type="submit"
-                  value="Cancel"
-                  className="cancel btn"
                   formaction="/"
                 >
-                </input>
+                  Cancel
+                </CancelButton>
               </div>
             </form>
           </div>

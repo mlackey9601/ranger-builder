@@ -1,6 +1,48 @@
 import React, { Component } from 'react';
 import * as userAPI from '../../services/user-api';
 import './SignUpForm.css';
+import { withStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
+
+const CancelButton = withStyles((theme) => ({
+  root: {
+    color: 'rgba(241, 230, 211, 1)',
+    backgroundColor: 'rgba(37, 35, 31, 1)',
+    fontFamily: 'Cinzel Decorative',
+    textAlign: 'center',
+    fontSize: '1.2vmin',
+    height: '4vmin',
+    width: '9vmin',
+    cursor: 'pointer',
+    outline: 'none',
+    textDecoration: 'none',
+    '&:hover': {
+      backgroundColor: 'rgba(100, 28, 39, 1)',
+      color: 'rgba(255, 255, 255, 1)',
+      textShadow: '0 0 8px rgba(241, 230, 211, 1)',
+    },
+  },
+}))(Button);
+
+const SignUpButton = withStyles((theme) => ({
+  root: {
+    color: 'rgba(241, 230, 211, 1)',
+    backgroundColor: 'rgba(37, 35, 31, 1)',
+    fontFamily: 'Cinzel Decorative',
+    textAlign: 'center',
+    fontSize: '1.2vmin',
+    height: '4vmin',
+    width: '9vmin',
+    cursor: 'pointer',
+    outline: 'none',
+    textDecoration: 'none',
+    '&:hover': {
+      backgroundColor: 'rgba(24, 29, 75, 1)',
+      color: 'rgba(255, 255, 255, 1)',
+      textShadow: '0 0 8px rgba(241, 230, 211, 1)',
+    },
+  },
+}))(Button);
 
 class SignUpForm extends Component {
 
@@ -36,6 +78,7 @@ class SignUpForm extends Component {
   }
 
   render() {
+
     return (
       <div className="form-container">
         <form autoComplete="off">
@@ -108,20 +151,19 @@ class SignUpForm extends Component {
           &nbsp;&nbsp;&nbsp;
           <center>
             <div className="buttons">
-              <button
-                className="signup btn"
-                disabled={this.isFormInvalid()}
+              <SignUpButton
+                variant="contained"
                 onClick={this.handleSubmit}
               >
                 Sign Up
-              </button>
-              <input
-                className="cancel btn"
+              </SignUpButton>
+              <CancelButton
+                variant="contained"
                 type="submit"
-                value="Cancel"
                 formaction="/"
               >
-              </input>
+                Cancel
+              </CancelButton>
             </div>
           </center>
         </form>

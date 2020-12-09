@@ -140,7 +140,7 @@ const PlayOrderPage = () => {
                     <AccordionSummary >
                         <div className="accordion-summary">
                             <div className="supplement-title">Incinerator</div>
-                            <div className="level">Any Level</div>
+                            <div className="level">Any</div>
                         </div>
                     </AccordionSummary>
                     <AccordionDetails>
@@ -153,7 +153,7 @@ const PlayOrderPage = () => {
                     <AccordionSummary >
                         <div className="accordion-summary">
                             <div className="supplement-title">Menagerie</div>
-                            <div className="level">Any Level</div>
+                            <div className="level">Any</div>
                         </div>
                     </AccordionSummary>
                     <AccordionDetails>
