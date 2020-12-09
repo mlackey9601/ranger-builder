@@ -6,7 +6,22 @@ const ContactPage = () => {
     <div className="ContactPage">
         <header className="contact-heading">Contact</header>
         &nbsp;&nbsp;&nbsp;
-        <img className="contact-img" alt="knight" src="https://i.imgur.com/gwdv2jq.jpg"></img>
+        <div className="contact-container">
+          <div>
+            <img className="contact-img" alt="knight" src="https://i.imgur.com/gwdv2jq.jpg"></img>
+          </div>
+          <div className="contact-content">
+            <div className="contact-email">
+              For any questions, suggestions, or error reporting, please contact me at: <a href="mailto: devoftheshadowdeep@gmail.com" className="link">devoftheshadowdeep@gmail.com</a>
+            </div>
+            <div className="contact-links">
+              Please visit my <a href="https://www.michaellackey.com" className="link">personal website</a>, <a href="https://github.com/mlackey9601" className="link">GitHub</a>, or connect with me on <a href="https://www.linkedin.com/in/michaelglackey/" className="link">LinkedIn</a>.
+            </div>
+            <div className="contact-projects">
+              Try out my paint management app, <a href="https://battlebrush.herokuapp.com/" className="link">Battle Brush</a>!
+            </div>
+          </div>
+        </div>
     </div>
   )
 }

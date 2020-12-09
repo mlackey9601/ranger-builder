@@ -14,6 +14,13 @@
   font-size: 3vmin;
 }
 
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  width: 60vmax;
+  font-size: 2vmin;
+}
+
 .contact-img {
   height: auto;
   width: 30vmax;
@@ -21,4 +28,23 @@
   border-width: 0.5vmin;
   background-color: rgba(100, 28, 39, 1);
   margin-right: 3vmin;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30vmax;
+  font-family: 'Cormorant', serif;
+  font-size: 3vmin;
+  text-align: center;
+}
+
+.link, .link:visited {
+  color: rgba(100, 28, 39, 1);
+  text-decoration: none;
+}
+
+.link:hover {
+  color: rgba(238, 45, 50, 1);
 }
