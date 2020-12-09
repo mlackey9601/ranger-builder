@@ -4,7 +4,7 @@
 
 #### By: Michael Lackey
 
-#### <a href="https://michaellackey.com/" target="_blank" rel="noopener noreferrer">Website</a> | <a href="https://github.com/mlackey9601" target="_blank" rel="noopener noreferrer">GitHub</a> | <a href="https://www.linkedin.com/in/" target="_blank" rel="noopener noreferrer">LinkedIn</a> | <a href="https://www.vettery.com/ga/employers" target="_blank" rel="noopener noreferrer">Vettery</a>
+#### [Website](https://michaellackey.com/) | [GitHub](https://github.com/mlackey9601) | [LinkedIn](https://www.linkedin.com/in/michaelglackey/) | [Vettery](https://www.vettery.com/ga/employers)
 ***
 
 ### ***Description***
@@ -42,13 +42,15 @@
 
 ### ***Credits***
 
-##### Joseph McCullough: <a href="https://www.drivethrurpg.com/browse/pub/11264" target="_blank" rel="noopener noreferrer">Rangers of Shadow Deep</a>
+##### Joseph McCullough: [Rangers of Shadow Deep](https://www.drivethrurpg.com/browse/pub/11264)
 
-##### Map of Alladore: <a href="https://www.facebook.com/groups/199819667485240/permalink/599052670895269" target="_blank" rel="noopener noreferrer">Alexei Vella</a>
+##### Map of Alladore: [Alexei Vella](https://www.facebook.com/groups/199819667485240/permalink/599052670895269)
 
-##### App Scaffolding: <a href="https://github.com/davidstinson/chajr" target="_blank" rel="noopener noreferrer">Chajr 1.2.2</a>
+##### App Scaffolding: [Chajr 1.2.2](https://github.com/davidstinson/chajr)
 
-##### Select React Components: <a href="https://material-ui.com/" target="_blank" rel="noopener noreferrer">Material-UI</a>
+##### Select React Components: [Material-UI](https://material-ui.com/)
 
-##### Background: <a href="https://cssgradient.io/" target="_blank" rel="noopener noreferrer">CSS Gradient</a>
+##### Background: [CSS Gradient](https://cssgradient.io/)
+
+
 ***
