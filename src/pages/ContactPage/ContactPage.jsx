@@ -12,13 +12,13 @@ const ContactPage = () => {
           </div>
           <div className="contact-content">
             <div className="contact-email">
-              For any questions, suggestions, or error reporting, please contact me at: <a href="mailto: devoftheshadowdeep@gmail.com" className="link">devoftheshadowdeep@gmail.com</a>
+              For any questions, suggestions, or error reporting, please contact me at: <a href="mailto: devoftheshadowdeep@gmail.com" className="link" target="_blank" rel="noopener noreferrer">devoftheshadowdeep@gmail.com</a>
             </div>
             <div className="contact-links">
-              Please visit my <a href="https://www.michaellackey.com" className="link">personal website</a>, <a href="https://github.com/mlackey9601" className="link">GitHub</a>, or connect with me on <a href="https://www.linkedin.com/in/michaelglackey/" className="link">LinkedIn</a>.
+              Please visit my <a href="https://www.michaellackey.com" className="link" target="_blank" rel="noopener noreferrer">personal website</a>, <a href="https://github.com/mlackey9601" className="link" target="_blank" rel="noopener noreferrer">GitHub</a>, or connect with me on <a href="https://www.linkedin.com/in/michaelglackey/" className="link" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
             </div>
             <div className="contact-projects">
-              Try out my paint management app, <a href="https://battlebrush.herokuapp.com/" className="link">Battle Brush</a>!
+              Try out my paint management app, <a href="https://battlebrush.herokuapp.com/" className="link" target="_blank" rel="noopener noreferrer">Battle Brush</a>!
             </div>
           </div>
         </div>

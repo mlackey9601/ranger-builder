@@ -123,7 +123,6 @@ class SignUpForm extends Component {
               value={this.state.email} 
               name="email" 
               onChange={this.handleChange}
-              required
             />
           </div>
           &nbsp;&nbsp;&nbsp;

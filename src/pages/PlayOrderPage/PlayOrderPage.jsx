@@ -8,14 +8,13 @@ import MuiAccordionDetails from '@material-ui/core/AccordionDetails';
 const Accordion = withStyles({
     root: {
         backgroundColor: 'rgba(241, 230, 211, 1)',
-        border: '.25vmin solid rgba(100, 28, 39, 1)',
+        border: 'solid rgba(100, 28, 39, 1)',
         boxShadow: 'none',
         '&:not(:last-child)': {
         borderBottom: 0,
         },
         '&:before': {
         display: 'none',
-        margin: '10px',
         },
         '&$expanded': {
         margin: '0',
@@ -27,19 +26,19 @@ const Accordion = withStyles({
 const AccordionSummary = withStyles({
     root: {
         backgroundColor: 'rgba(224, 213, 194, 1)',
-        borderBottom: '1px solid rgba(100, 28, 39, .125)',
+        borderBottom: '1px solid rgba(100, 28, 39, .5)',
         marginBottom: -1,
-        minHeight: 56,
+        maxHeight: 55,
         color: 'rgba(100, 28, 39, 1)',
         cursor: 'pointer',
         '&$expanded': {
-        minHeight: 56,
+            maxHeight: 55,
         },
     },
     content: {
         '&$expanded': {
-        margin: '12px 0',
-        color: 'rgba(238, 45, 50, 1)',
+            maxHeight: 55,
+            color: 'rgba(238, 45, 50, 1)',
         },
     },
     expanded: {},
@@ -48,7 +47,7 @@ const AccordionSummary = withStyles({
 const AccordionDetails = withStyles((theme) => ({
     root: {
         padding: theme.spacing(2),
-        backgroundColor: 'rgba(216, 205, 187, 1)'
+        backgroundColor: 'rgba(100, 28, 39, .25)'
     },
 }))(MuiAccordionDetails);
 
@@ -65,13 +64,52 @@ const PlayOrderPage = () => {
         &nbsp;&nbsp;&nbsp;
         <div className="playorder-container">
             <div>
-                <img className="playorder-img" alt="temple guard" src="https://i.imgur.com/vS1FefD.jpg"></img>
+                <img className="playorder-img" alt="temple" src="https://i.imgur.com/OlbIhMj.jpg"></img>
             </div>
             <div className="text-container">
                 <p className="playorder-intro">
-                    Below is the recommended play order for all of the supplements for Rangers of the Shadow Deep as recommended by Joseph McCullough <a className="link" href="https://www.facebook.com/groups/199819667485240/permalink/665850730882129">here</a>.
+                    Below is the recommended play order for all of the missions for Rangers of Shadow Deep as recommended by Joseph McCullough <a className="link" href="https://www.facebook.com/groups/199819667485240/permalink/665850730882129" target="_blank" rel="noopener noreferrer">here</a>.
                 </p>
                 <Accordion square expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
+                    <AccordionSummary >
+                        <div className="accordion-summary">
+                            <div className="supplement-title">The Missing</div>
+                            <div className="level">0 - 5</div>
+                        </div>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                        <div className="description">
+                            Three days ago, a veteran Ranger by the name of <i>Aventine</i> went out to investigate reports of an attack on a nearby village. He has not returned. Determined to find the missing Ranger, you have gathered what companions you can and set off for the village. It's an eight-hour hike over difficult terrain...
+                        </div>
+                    </AccordionDetails>
+                </Accordion>
+                <Accordion square expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
+                    <AccordionSummary >
+                        <div className="accordion-summary">
+                            <div className="supplement-title">The Beacon Tower</div>
+                            <div className="level">0 - 5</div>
+                        </div>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                        <div className="description">
+                            Contact has been lost with the beacon tower of <i>Tor Varden</i>, and it is presumed to have been overrun. You are commanded to round up what men you can and proceed with all swiftness to <i>Tor Varden</i> to ascertain the truth. If the tower has fallen, learn what enemy forces now occupy it and harass or eliminate them as opportunity presents...
+                        </div>
+                    </AccordionDetails>
+                </Accordion>
+                <Accordion square expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
+                    <AccordionSummary >
+                        <div className="accordion-summary">
+                            <div className="supplement-title">Descent Into Darkness</div>
+                            <div className="level">0 - 5</div>
+                        </div>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                        <div className="description">
+                            Scouting the area behind <i>Tor Varden</i>, you found a long, broken stairway. You are to lead your team down the stairs and penetrate as far as you can into the Shadow Deep. You will be the first warriors of <i>Alladore</i> to enter the cursed realm and any intelligence you can bring back will be of huge importance. Take any opportunity to strike against the enemy, but your primary goal is reconnaissance...
+                        </div>
+                    </AccordionDetails>
+                </Accordion>
+                <Accordion square expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
                     <AccordionSummary >
                         <div className="accordion-summary">
                             <div className="supplement-title">Blood Moon</div>
@@ -80,14 +118,14 @@ const PlayOrderPage = () => {
                     </AccordionSummary>
                     <AccordionDetails>
                         <div className="description">
-                            Werewolves have descended on the isolated village of <i>High Rock</i>, leaving death and destruction in their wake. Separated from their usual companions, the rangers must rely on a group of auxiliary soldiers to lead them to the village, help fight the werewolves, and hopefully rescue any survivors. However, as the rangers investigate the scene, it becomes increasingly clear that one of those auxiliaries is hiding a deadly secret...
+                            Werewolves have descended on the isolated village of <i>High Rock</i>, leaving death and destruction in their wake. Separated from their usual companions, the Rangers must rely on a group of auxiliary soldiers to lead them to the village, help fight the werewolves, and hopefully rescue any survivors. However, as the Rangers investigate the scene, it becomes increasingly clear that one of those auxiliaries is hiding a deadly secret...
                         </div>
                     </AccordionDetails>
                 </Accordion>
-                <Accordion square expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
+                <Accordion square expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
                     <AccordionSummary >
                         <div className="accordion-summary">
-                            <div className="supplement-title">Blinding Light</div>
+                            <div className="supplement-title">Burning Light</div>
                             <div className="level">5 - 15</div>
                         </div>
                     </AccordionSummary>
@@ -97,7 +135,7 @@ const PlayOrderPage = () => {
                         </div>
                     </AccordionDetails>
                 </Accordion>
-                <Accordion square expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
+                <Accordion square expanded={expanded === 'panel6'} onChange={handleChange('panel6')}>
                     <AccordionSummary >
                         <div className="accordion-summary">
                             <div className="supplement-title">Temple of Madness</div>
@@ -110,7 +148,7 @@ const PlayOrderPage = () => {
                         </div>
                     </AccordionDetails>
                 </Accordion>
-                <Accordion square expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
+                <Accordion square expanded={expanded === 'panel7'} onChange={handleChange('panel7')}>
                     <AccordionSummary >
                         <div className="accordion-summary">
                             <div className="supplement-title">Ghost Stone</div>
@@ -123,7 +161,7 @@ const PlayOrderPage = () => {
                         </div>
                     </AccordionDetails>
                 </Accordion>
-                <Accordion square expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
+                <Accordion square expanded={expanded === 'panel8'} onChange={handleChange('panel8')}>
                     <AccordionSummary >
                         <div className="accordion-summary">
                             <div className="supplement-title">Across the Wastes</div>
@@ -136,7 +174,7 @@ const PlayOrderPage = () => {
                         </div>
                     </AccordionDetails>
                 </Accordion>
-                <Accordion square expanded={expanded === 'panel6'} onChange={handleChange('panel6')}>
+                <Accordion square expanded={expanded === 'panel9'} onChange={handleChange('panel9')}>
                     <AccordionSummary >
                         <div className="accordion-summary">
                             <div className="supplement-title">Incinerator</div>
@@ -149,7 +187,7 @@ const PlayOrderPage = () => {
                         </div>
                     </AccordionDetails>
                 </Accordion>
-                <Accordion square expanded={expanded === 'panel7'} onChange={handleChange('panel7')}>
+                <Accordion square expanded={expanded === 'panel10'} onChange={handleChange('panel10')}>
                     <AccordionSummary >
                         <div className="accordion-summary">
                             <div className="supplement-title">Menagerie</div>

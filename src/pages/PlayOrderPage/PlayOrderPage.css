@@ -81,7 +81,7 @@
     grid-row-end: 1;
     font-family: 'Cinzel Decorative', cursive;
     font-size: 1.5vmin;
-    color: rgba(55, 55, 55, 1);
+    color: rgb(34, 34, 34);
     text-align: right;
     align-self: center;
 }
