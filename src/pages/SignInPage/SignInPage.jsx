@@ -3,16 +3,6 @@ import './SignInPage.css';
 import * as userAPI from '../../services/user-api';
 import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
-import TextField from '@material-ui/core/TextField';
-import InputAdornment from '@material-ui/core/InputAdornment';
-
-const handleClickShowPassword = () => {
-  setValues({ ...values, showPassword: !values.showPassword });
-};
-
-const handleMouseDownPassword = (event) => {
-  event.preventDefault();
-};
 
 const CancelButton = withStyles((theme) => ({
   root: {
