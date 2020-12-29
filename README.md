@@ -42,7 +42,7 @@
 
 ### ***Credits***
 
-##### Joseph McCullough: [Rangers of Shadow Deep](https://www.drivethrurpg.com/browse/pub/11264)
+##### Rangers of Shadow Deep: [Joseph McCullough](https://www.drivethrurpg.com/browse/pub/11264)
 
 ##### Map of Alladore: [Alexei Vella](https://www.facebook.com/groups/199819667485240/permalink/599052670895269)
 
