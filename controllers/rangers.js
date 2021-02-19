@@ -1,4 +1,4 @@
-var Ranger = require('../models/ranger');
+let Ranger = require('../models/ranger');
 
 module.exports = {
   index,

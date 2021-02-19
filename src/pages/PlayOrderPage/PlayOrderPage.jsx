@@ -68,7 +68,7 @@ const PlayOrderPage = () => {
             </div>
             <div className="text-container">
                 <p className="playorder-intro">
-                    Below is the recommended play order for all of the missions for Rangers of Shadow Deep as recommended by Joseph McCullough <a className="link" href="https://www.facebook.com/groups/199819667485240/permalink/665850730882129" target="_blank" rel="noopener noreferrer">here</a>.
+                    Below is the recommended play order for all of the missions for Rangers of Shadow Deep as recommended by Joseph McCullough <a className="link" href="https://www.facebook.com/groups/199819667485240/permalink/881706725963194" target="_blank" rel="noopener noreferrer">here</a>.
                 </p>
                 <Accordion square expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                     <AccordionSummary >
@@ -138,6 +138,19 @@ const PlayOrderPage = () => {
                 <Accordion square expanded={expanded === 'panel6'} onChange={handleChange('panel6')}>
                     <AccordionSummary >
                         <div className="accordion-summary">
+                            <div className="supplement-title">Menagerie</div>
+                            <div className="level">Any</div>
+                        </div>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                        <div className="description">
+                            In the midst of a mission into enemy territory, the Rangers are ambushed by a strange assortment of wild beasts, pursued by their Shadow Deep handlers. Can the Rangers survive the onslaught, and then turn the tables on their attackers? And can they discover the secrets of the enemy wagon train before it escapes back into the darkness?
+                        </div>
+                    </AccordionDetails>
+                </Accordion>
+                <Accordion square expanded={expanded === 'panel7'} onChange={handleChange('panel7')}>
+                    <AccordionSummary >
+                        <div className="accordion-summary">
                             <div className="supplement-title">Temple of Madness</div>
                             <div className="level">5 - 15</div>
                         </div>
@@ -147,8 +160,9 @@ const PlayOrderPage = () => {
                             For weeks the soldiers of <i>Alladore</i> have lost nearly every battle and skirmish they have fought, and it is clear that some dark sorcery is at work. With the fate of the kingdom at stake, the Rangers are sent into the Shadow Deep to try and locate the source of this magic and end the threat. To accomplish this task, however, they must face the horrors of the <i>Temple of Madness...</i>
                         </div>
                     </AccordionDetails>
+                    
                 </Accordion>
-                <Accordion square expanded={expanded === 'panel7'} onChange={handleChange('panel7')}>
+                <Accordion square expanded={expanded === 'panel8'} onChange={handleChange('panel8')}>
                     <AccordionSummary >
                         <div className="accordion-summary">
                             <div className="supplement-title">Ghost Stone</div>
@@ -158,19 +172,6 @@ const PlayOrderPage = () => {
                     <AccordionDetails>
                         <div className="description">
                             Ghastly green specters are flooding out of the Shadow Deep in the North, overrunning the <i>Alladorean</i> army and putting it to flight. Now, two groups of Rangers must work together to launch a daring, and likely deadly, raid into the heart of enemy territory. But with an entire army between them and their target, can the Rangers really hope to destroy the <i>Ghost Stone?</i>
-                        </div>
-                    </AccordionDetails>
-                </Accordion>
-                <Accordion square expanded={expanded === 'panel8'} onChange={handleChange('panel8')}>
-                    <AccordionSummary >
-                        <div className="accordion-summary">
-                            <div className="supplement-title">Across the Wastes</div>
-                            <div className="level">10+</div>
-                        </div>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                        <div className="description">
-                            A desperate mission sends the Rangers deep into the trackless desert north of <i>Alladore.</i> Somewhere in that wasteland is a hidden entrance to the Shadow Deep, an entrance that could prove the only chance for a daring rescue...
                         </div>
                     </AccordionDetails>
                 </Accordion>
@@ -190,13 +191,13 @@ const PlayOrderPage = () => {
                 <Accordion square expanded={expanded === 'panel10'} onChange={handleChange('panel10')}>
                     <AccordionSummary >
                         <div className="accordion-summary">
-                            <div className="supplement-title">Menagerie</div>
-                            <div className="level">Any</div>
+                            <div className="supplement-title">Across the Wastes</div>
+                            <div className="level">10+</div>
                         </div>
                     </AccordionSummary>
                     <AccordionDetails>
                         <div className="description">
-                            In the midst of a mission into enemy territory, the Rangers are ambushed by a strange assortment of wild beasts, pursued by their Shadow Deep handlers. Can the Rangers survive the onslaught, and then turn the tables on their attackers? And can they discover the secrets of the enemy wagon train before it escapes back into the darkness?
+                            A desperate mission sends the Rangers deep into the trackless desert north of <i>Alladore.</i> Somewhere in that wasteland is a hidden entrance to the Shadow Deep, an entrance that could prove the only chance for a daring rescue...
                         </div>
                     </AccordionDetails>
                 </Accordion>
