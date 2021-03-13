@@ -17,7 +17,7 @@ class SignUpPage extends Component {
         <header className="signup-heading">Sign Up</header>
         &nbsp;&nbsp;&nbsp;
         <div className="signup-container">
-          <img className="signup-img" alt="weapons" src="https://i.imgur.com/ion9qhj.jpg"></img>
+          <img className="signup-img" alt="tor varden" src="https://i.imgur.com/QSL3VS1.jpg"></img>
           <SignUpForm {...this.props} updateMessage={this.updateMessage} />
           <p>{this.state.message}</p>
         </div>

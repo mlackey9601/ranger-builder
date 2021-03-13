@@ -15,8 +15,8 @@
 }
 
 .references-img {
-  height: auto;
-  width: 30vmax;
+  max-height: 17vmax;
+  max-width: 30vmax;
   border: solid rgba(100, 28, 39, 1);
   border-width: 0.5vmin;
   background-color: rgba(100, 28, 39, 1);

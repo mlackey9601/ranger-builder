@@ -1,0 +1,24 @@
+.SpellsPage {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3vmin;
+  outline: none;
+  text-decoration: none;
+}
+
+.spells-heading {
+  font-family: 'Cinzel Decorative', cursive;
+  font-weight: bold;
+  font-size: 3vmin;
+}
+
+.spells-img {
+  height: auto;
+  width: 30vmax;
+  border: solid rgba(100, 28, 39, 1);
+  border-width: 0.5vmin;
+  background-color: rgba(100, 28, 39, 1);
+  margin-right: 3vmin;
+}

@@ -6,7 +6,7 @@ const BestiaryPage = () => {
     <div className="BestiaryPage">
         <header className="bestiary-heading">Bestiary</header>
         &nbsp;&nbsp;&nbsp;
-        <img className="bestiary-img" alt="flies" src="https://i.imgur.com/IU75cNH.jpg"></img>
+        <img className="bestiary-img" alt="hog" src="https://i.imgur.com/SQBILaM.png"></img>
     </div>
   )
 }

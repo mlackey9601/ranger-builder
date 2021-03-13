@@ -17,10 +17,18 @@ import BestiaryPage from '../../pages/BestiaryPage/BestiaryPage';
 import PlayOrderPage from '../../pages/PlayOrderPage/PlayOrderPage';
 import CompanionsPage from '../../pages/CompanionsPage/CompanionsPage';
 import WarbandsPage from '../../pages/WarbandsPage/WarbandsPage';
+import SkillsPage from '../SkillsPage/SkillsPage';
+import AbilitiesPage from '../../pages/AbilitiesPage/AbilitiesPage';
+import SpellsPage from '../../pages/SpellsPage/SpellsPage';
+import EquipmentPage from '../../pages/EquipmentPage/EquipmentPage';
+import WeaponsPage from '../../pages/WeaponsPage/WeaponsPage';
+import HerbsPage from '../../pages/HerbsPage/HerbsPage';
+import MagicPage from '../../pages/MagicPage/MagicPage';
+import ConditionsPage from '../../pages/ConditionsPage/ConditionsPage';
+import EndGamePage from '../../pages/EndGamePage/EndGamePage';
 
 class App extends Component {
   state = {
-    // Initialize user if there's a token, otherwise null
     user: userAPI.getUser(),
     rangers: null
   };
@@ -87,6 +95,33 @@ class App extends Component {
           }/>
           <Route exact path='/references/playorder' render={() =>
             <PlayOrderPage />
+          }/>
+          <Route exact path='/references/skills' render={() =>
+            <SkillsPage />
+          }/>
+          <Route exact path='/references/abilities' render={() =>
+            <AbilitiesPage />
+          }/>
+          <Route exact path='/references/spells' render={() =>
+            <SpellsPage />
+          }/>
+          <Route exact path='/references/equipment' render={() =>
+            <EquipmentPage />
+          }/>
+          <Route exact path='/references/weapons' render={() =>
+            <WeaponsPage />
+          }/>
+          <Route exact path='/references/herbsandpotions' render={() =>
+            <HerbsPage />
+          }/>
+          <Route exact path='/references/magic' render={() =>
+            <MagicPage />
+          }/>
+          <Route exact path='/references/conditions' render={() =>
+            <ConditionsPage />
+          }/>
+          <Route exact path='/references/endofgame' render={() =>
+            <EndGamePage />
           }/>
           <Route exact path='/about' render={() =>
             <AboutPage />
