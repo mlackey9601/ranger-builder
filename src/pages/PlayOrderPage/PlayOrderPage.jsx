@@ -67,9 +67,6 @@ const PlayOrderPage = () => {
                 <img className="playorder-img" alt="temple" src="https://i.imgur.com/OlbIhMj.jpg"></img>
             </div>
             <div className="text-container">
-                <p className="playorder-intro">
-                    Below is the recommended play order for all of the missions for Rangers of Shadow Deep as recommended by Joseph McCullough <a className="link" href="https://www.facebook.com/groups/199819667485240/permalink/881706725963194" target="_blank" rel="noopener noreferrer">here</a>.
-                </p>
                 <Accordion square expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                     <AccordionSummary >
                         <div className="accordion-summary">
@@ -201,6 +198,9 @@ const PlayOrderPage = () => {
                         </div>
                     </AccordionDetails>
                 </Accordion>
+                <p className="reference">
+                    The above play order was recommended by Joseph McCullough <a className="link" href="https://www.facebook.com/groups/199819667485240/permalink/881706725963194" target="_blank" rel="noopener noreferrer">here</a>.
+                </p>
             </div>
         </div>
     </div>
