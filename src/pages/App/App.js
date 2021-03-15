@@ -108,7 +108,7 @@ class App extends Component {
           <Route exact path='/references/equipment' render={() =>
             <EquipmentPage />
           }/>
-          <Route exact path='/references/weapons' render={() =>
+          <Route exact path='/references/weaponsandarmour' render={() =>
             <WeaponsPage />
           }/>
           <Route exact path='/references/herbsandpotions' render={() =>

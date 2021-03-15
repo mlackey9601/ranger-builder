@@ -8,7 +8,9 @@ const ReferencesPage = () => {
         <header className="references-heading">References</header>
         &nbsp;&nbsp;&nbsp;
         <div className="references-container">
-          <img className="references-img" alt="book" src="https://i.imgur.com/KIlPKeH.jpg" />
+          <div className="references-img">
+            <img className="ref-img" alt="book" src="https://i.imgur.com/KIlPKeH.jpg" />
+          </div>
           <div className="references-links">
             <div className="link-row">
               <Link to='/references/playorder' className='link-box'>Play Order</Link>
@@ -22,7 +24,7 @@ const ReferencesPage = () => {
             </div>
             <div className="link-row">
               <Link to='/references/equipment' className='link-box'>Equipment</Link>
-              <Link to='/references/weapons' className='link-box'>Weapons & Armour</Link>
+              <Link to='/references/weaponsandarmour' className='link-box'>Weapons & Armour</Link>
               <Link to='/references/herbsandpotions' className='link-box'>Herbs & Potions</Link>
             </div>
             <div className="link-row">

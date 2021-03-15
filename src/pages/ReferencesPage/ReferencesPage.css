@@ -15,12 +15,17 @@
 }
 
 .references-img {
-  max-height: 17vmax;
-  max-width: 30vmax;
+  width: 30vmax;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ref-img {
+  width: 29vmax;
   border: solid rgba(100, 28, 39, 1);
   border-width: 0.5vmin;
-  background-color: rgba(100, 28, 39, 1);
-  margin-right: 1vmin;
 }
 
 .references-container {
@@ -52,7 +57,7 @@
   align-items: center;
   text-align: center;
   font-family: 'Cinzel Decorative', cursive;
-  font-size: 2vmin;
+  font-size: 1.25rem;
   color: rgba(241, 230, 211, 1);
   text-decoration: none;
   height: 8vmax;
@@ -61,8 +66,14 @@
   background-color: rgba(100, 28, 39, 1);
   border: solid rgba(241, 230, 211, 1);
   border-width: .25vmin;
-  margin: 1vmin;
+  margin: 1.5vmin;
   text-decoration: none;
+}
+
+@media screen and (min-width: 20rem) {
+  .link-box {
+    font-size: calc(.5rem + 0.5 * ((100vw - 20rem) / 60));
+  }
 }
 
 .link-box:hover {
